@@ -13,21 +13,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
           <div class="logo">
             <a href="#"><img src="img/logo-light.png" alt="logo"></a>
           </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <ul class="navbar-nav ms-auto ">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pages</a>
+                <a class="nav-link " href="#">Pages</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Menu
                 </a>
                 <ul class="dropdown-menu">
@@ -38,7 +38,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link " href="#">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">log in</a>
@@ -47,32 +47,88 @@
           </div>
         </div>
       </nav>
-      <header>
-        <div class="container-fluid">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/1.jpg" class=" w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/2.jpg" class=" w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/3.jpg" class=" w-100" alt="...">
-              </div>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <img src="img/logo of image.png" alt="">
+              <h5>COFFEE FACTORY </h5>
+              <img src="img/slider-separator-img.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua atin script and its variants, and.</p>
+              <button class="btn">shop here</button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+          <div class="carousel-item">
+            <img src="img/2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <img src="img/logo of image.png" alt="">
+              <h5>Coffee Heaven </h5>
+              <img src="img/slider-separator-img.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua atin script and its variants, and.</p>
+              <button class="btn">shop here</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <img src="img/logo of image.png" alt="">
+              <h5>Coffee Masters  </h5>
+              <img src="img/slider-separator-img.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua atin script and its variants, and.</p>
+              <button class="btn">shop here</button>
+            </div>
           </div>
         </div>
-      </header>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       
+      <div class="offer">
+        <div class="container">
+          <div class="offer-dec">
+            <h2>our delicious offer</h2>
+            <span class="img"><img src="img/25.png" alt="logo"></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+          </div>
+          <div class="row mt-5 text-center">
+            <div class="col-md-3 offer-item">
+              <a href="#"><img src="img/icon-1.png" alt="img of coffe"/></a>
+              <a href="#"><h3 class="my-3">Types of Coffee</h3></a>
+              <p>
+                  Lorem ipsum dolor sit ametal, consectetuer adipiscing elitus. Aeneantos commodo
+              </p>
+            </div>
+            <div class="col-md-3 offer-item">
+              <a href="#"><img src="img/icon-2.png" alt="img of bean"/></a>
+              <a href="#"><h3 class="my-3">Bean Varieties</h3></a>
+              <p>
+                  Lorem ipsum dolor sit ametal, consectetuer adipiscing elitus. Aeneantos commodo
+              </p>
+            </div>
+            <div class="col-md-3 offer-item">
+              <a href="#"><img src="img/icon-3.png" alt="img of Sweet"/></a>
+              <a href="#"><h3 class="my-3">Coffee & Pastry</h3></a>
+              <p>
+                  Lorem ipsum dolor sit ametal, consectetuer adipiscing elitus. Aeneantos commodo
+              </p>
+            </div>
+            <div class="col-md-3 offer-item">
+              <a href="#"><img src="img/icon-4.png" alt="img of coffe"/></a>
+              <a href="#"><h3 class="my-3">Coffee To Go</h3></a>
+              <p>
+                  Lorem ipsum dolor sit ametal, consectetuer adipiscing elitus. Aeneantos commodo
+              </p>
+            </div>
+        </div>
+        </div>
+      </div>
      
 
 
