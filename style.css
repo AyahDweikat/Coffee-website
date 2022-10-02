@@ -80,6 +80,7 @@ img.cover{
     cursor: pointer;
 }
 /* end navbar*/
+/* start offer*/
 .offer h2{
     text-transform: uppercase;
     text-align: center;
@@ -130,7 +131,7 @@ img.cover{
     margin-bottom:  100px;
     padding: 0;
 }
-
+/* end offer*/
 /* Herald */
 .herald{
     background-image: url('img/new-new-h1-bacground-img-3.jpg');
@@ -197,3 +198,4 @@ img.cover{
     cursor: pointer;
     padding-left: 10px;
 }
+/*end herald*/
