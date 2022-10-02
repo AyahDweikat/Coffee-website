@@ -6,17 +6,23 @@ a{
 /* start navbar*/
 .logo a img{
     width: 100%;
-    height: 67px;
+    height: 55px;
     cursor: pointer;
+    margin-left:30px;
+    margin-top: 0px;
+    padding: 0;
 }
 .navbar-nav .nav-item .nav-link{
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 23px;
     box-sizing: border-box;
     font-family: 'Marcellus', serif;
+}
+.navbar-nav .nav-item{
+    margin-left:40px;
 }
 .carousel-item {
     height: 100hv;
@@ -24,12 +30,16 @@ a{
     background-size:cover ;
 }
 .carousel-caption{
-    bottom: 280px;
-    right: -50px;
+    bottom: 0px;
+    right: -200px;
 }
 .carousel-caption img{
-   
+   margin-top: 0px;
 }
+img.cover{
+    height: 100vh;
+    width: 100%;
+ }
 .carousel-caption h5{
     font-size: 68px;
     line-height: 78px;
@@ -39,25 +49,31 @@ a{
     font-family: 'Marcellus', serif;
 }
 .carousel-caption p{
+    width:600px;
     font-size: 16px;
-    text-align: right;
-    margin-right: -200px;
+    margin: auto;
+    margin-top: 30px;
     line-height: 28px;
     font-weight: 300;
     color: rgb(255, 255, 255);
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    margin: 0px;
     padding: 0px;
+    margin-bottom: 30px;
 }
 .carousel-caption .btn{
+    border-radius: 0;
     background-color: transparent;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 600;
-    padding: 23px 50px;
+    padding: 20px 50px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 .carousel-caption .btn:hover{
     background-color: #be9c79;
@@ -69,22 +85,27 @@ a{
     text-align: center;
     font-weight: 400;
     color: #262626;
-    margin-top: 35px;
+    margin-top: 125px;
     font-size: 45px;
     font-family: 'Marcellus', serif;
+    letter-spacing: 2px;
 }
 .offer .img img{
     text-align: center;
-    margin: 10px 417px;
-    width: 25%;
+    margin: 10px 0px;
+    margin-left: 460px;
+    /* width: 25%; */
 }
-.offer p{
+.offer-dec p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 26px;
     text-align: center;
     font-weight: 300;
     color: #656565;
+    width: 44%;
+    margin: auto;
+    margin-top: 20px;
 }
 .offer-item a{
     color: #262626;
@@ -105,4 +126,74 @@ a{
     line-height: 26px;
     font-weight: 300;
     color: #656565;
+    margin: auto;
+    margin-bottom:  100px;
+    padding: 0;
+}
+
+/* Herald */
+.herald{
+    background-image: url('img/new-new-h1-bacground-img-3.jpg');
+}
+.herald h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    color: #262626;
+    padding-top: 120px;
+    font-size: 45px;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 2px;
+}
+.herald .img img{
+    text-align: center;
+    margin: 10px 0px;
+    margin-left: 460px;
+    /* padding-bottom: 50px; */
+}
+.herald-dec p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 300;
+    color: #656565;
+    width: 44%;
+    margin: auto;
+    margin-top: 20px;
+}
+.herald-items{
+    margin-top: 50px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.herald-item a{
+    color: #262626;
+    font-family:'Marcellus', serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.herald-item a h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+}
+.herald-item a h3:hover{
+    color: #be9c79;
+    cursor: pointer;
+}
+.herald-item p{
+    font-family: open sans,sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #656565;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.herald-item a span:hover{
+    color: #be9c79;
+    cursor: pointer;
+    padding-left: 10px;
 }
