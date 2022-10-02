@@ -199,3 +199,79 @@ img.cover{
     padding-left: 10px;
 }
 /*end herald*/
+/* Sweet */
+.sweet h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    color: #262626;
+    padding-top: 60px;
+    font-size: 45px;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 2px;
+}
+.sweet .img img{
+    text-align: center;
+    margin: 10px 0px;
+    margin-left: 460px;
+    height: 100%;
+}
+.sweet-dec p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 300;
+    color: #656565;
+    width: 44%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.sweet-items{
+    margin-top: 50px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.sweet-item {
+    margin-bottom: 20px;
+}
+.sweet-item a{
+    color: #262626;
+    font-family:'Marcellus', serif;
+}
+/* COUNTER */
+/* .counter{
+    background-image: url('img/p2-background-img-1.jpg');
+} */
+.counter-items{
+    width: 100%;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.counter-item {
+    margin-top: 100px;
+}
+.counter-item h3{
+    color: #be9c79;
+    font-family:'Marcellus', serif;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.counter-item h4{
+    color: rgb(38, 38, 38);
+    font-family:'Marcellus', serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.counter-item p{
+    font-family: open sans,sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #656565;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 0;
+}
