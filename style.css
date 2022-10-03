@@ -239,9 +239,6 @@ img.cover{
     font-family:'Marcellus', serif;
 }
 /* COUNTER */
-/* .counter{
-    background-image: url('img/p2-background-img-1.jpg');
-} */
 .counter-items{
     width: 100%;
     padding-bottom: 100px;
@@ -273,3 +270,8 @@ img.cover{
     margin-bottom: 15px;
     padding: 0;
 }
+
+.contact-us{
+    text-align: center;
+}
+
