@@ -18,11 +18,31 @@ a{
     font-weight: 400;
     text-transform: uppercase;
     line-height: 23px;
+    position: relative;
     box-sizing: border-box;
     font-family: 'Marcellus', serif;
 }
 .navbar-nav .nav-item{
     margin-left:40px;
+}
+.navbar .nav-item .nav-link.active::after{
+    width: 100%;
+}
+.navbar-nav .nav-item .nav-link.active{
+    border-bottom: 2px solid #fff;
+}
+.navbar .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s;
+}
+.navbar .nav-item .nav-link:hover::after{
+    width: 100%;
 }
 .carousel-item {
     height: 100hv;
@@ -80,6 +100,7 @@ img.cover{
     cursor: pointer;
 }
 /* end navbar*/
+/* start offer*/
 .offer h2{
     text-transform: uppercase;
     text-align: center;
@@ -130,7 +151,7 @@ img.cover{
     margin-bottom:  100px;
     padding: 0;
 }
-
+/* end offer*/
 /* Herald */
 .herald{
     background-image: url('img/new-new-h1-bacground-img-3.jpg');
@@ -197,6 +218,7 @@ img.cover{
     cursor: pointer;
     padding-left: 10px;
 }
+/*end herald*/
 /* Sweet */
 .sweet h2{
     text-transform: uppercase;
