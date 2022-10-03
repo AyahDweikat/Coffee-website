@@ -292,8 +292,41 @@ img.cover{
     margin-bottom: 15px;
     padding: 0;
 }
-
-.contact-us{
+/* CONTACT US */
+.contact-us .row{
     text-align: center;
+    height: 209px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('img/p2-background-img-1\ \(1\).jpg');
 }
+.contact-us .btn{
+    float: left;
+    border-radius: 0;
+    background-color: #be9c79;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    border-color: #be9c79;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px 40px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.contact-us .btn:hover{
+    background-color: #262626;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.contact-us span{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
 
