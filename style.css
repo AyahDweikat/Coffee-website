@@ -327,7 +327,7 @@ img.cover{
     font-size: 20px;
     font-weight: 400;
 }
-/* Footer */
+/* Footer PART-1 */
 .stores{
     background-image: url('img/footer-top-img-1.jpg');
     background-position: center;
@@ -404,5 +404,48 @@ img.cover{
     font-size: 24px;
     padding-left: 10px;
     padding-right: 10px;
-
+}
+/* FOOTER PART-2 */
+.part2{
+    height: 165px;
+    color: #fff;
+    background-color: #121212;
+}
+.part2 ul{
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 60px;
+}
+.part2 ul li:hover{
+    color: #be9c79;
+}
+.part2 span a{
+    color: #fff;
+}
+.part2 span a:hover{
+    color: #be9c79;
+}
+.container{
+    height: 100%;
+}
+.copyright{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+}
+.contacts, .navs{
+    height: 100%;
+    font-family: 'Marcellus', serif;
+    font-weight: 300;
+    font-size: 15px;
 }
