@@ -28,23 +28,29 @@ a{
 .navbar-nav .nav-item{
     margin-left:40px;
 }
-.navbar .nav-item .nav-link.active::after{
+.navbar-nav .nav-item .nav-link.active::after{
     width: 100%;
 }
 .navbar-nav .nav-item .nav-link.active{
-    border-bottom: 2px solid #fff;
+    width: 100%;
 }
-.navbar .nav-item .nav-link::after{
+.navbar-nav .nav-item .nav-link::after{
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0;
+    width: 0%;
     height: 2px;
     background-color: #fff;
     transition: .5s;
 }
-.navbar .nav-item .nav-link:hover::after{
+.dropdown-toggle::after {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.navbar-nav .nav-item .nav-link:hover::after{
     width: 100%;
 }
 .carousel-item {
