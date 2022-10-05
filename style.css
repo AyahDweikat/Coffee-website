@@ -192,10 +192,16 @@ img.cover{
     margin: auto;
     margin-top: 20px;
 }
+.herald .row{
+    --bs-gutter-x: 0rem;
+}
 .herald-items{
     margin-top: 50px;
     width: 100%;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
 .herald-item a{
     color: #262626;
@@ -415,9 +421,10 @@ img.cover{
 }
 /* FOOTER PART-2 */
 .part2{
-    height: 165px;
+    /* height: 165px; */
     color: #fff;
     background-color: #121212;
+    text-align: center;
 }
 .part2 ul{
     height: 100%;
@@ -441,7 +448,6 @@ img.cover{
     height: 100%;
 }
 .copyright{
-    height: 100%;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -450,10 +456,16 @@ img.cover{
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     padding: 0;
+    background-color: #121212;
+
 }
 .contacts, .navs{
     height: 100%;
     font-family: 'Marcellus', serif;
     font-weight: 300;
     font-size: 15px;
+    background-color: #121212;
+
 }
+
+
