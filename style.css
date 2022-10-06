@@ -68,7 +68,7 @@ a{
 .carousel-item {
     height: 100hv;
     min-height: 300px;
-    background-size:cover ;
+    background-size:cover;
 }
 .carousel-caption{
     bottom: 0px;
@@ -80,7 +80,7 @@ a{
 img.cover{
     height: 100vh;
     width: 100%;
- }
+}
 .carousel-caption h5{
     font-size: 4.25rem;
     line-height: 4.875rem;
@@ -479,3 +479,68 @@ img.cover{
     cursor: pointer;
 }
 
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width:576px) {
+    .logo{
+        margin: auto;
+    }
+    .logo a img{
+        height: 50px;
+    }
+    .carousel-caption img{
+        margin-top: 0rem;
+        display: none;
+     }
+    .carousel-caption{
+        bottom: 0px;
+        right: 0px;
+    }
+    .carousel-caption h5{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .carousel-caption p{
+        width:90%;
+        font-size: 1rem;
+        margin: auto;
+        margin-top: 1.875rem;
+        padding: 0rem;
+        margin-bottom: 1.875rem;
+    }
+    .carousel-caption .btn{
+        border-radius: 0;
+        background-color: transparent;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 1.25rem 3.125rem;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    .carousel-caption .btn:hover{
+        background-color: #be9c79;
+        cursor: pointer;
+    }
+
+
+
+
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width:767px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width:991px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width:1199px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
