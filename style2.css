@@ -318,9 +318,10 @@ a{
 }
 /* FOOTER PART-2 */
 .part2{
-    height: 165px;
+    /* height: 165px; */
     color: #fff;
     background-color: #121212;
+    text-align: center;
 }
 .part2 ul{
     height: 100%;
@@ -344,7 +345,6 @@ a{
     height: 100%;
 }
 .copyright{
-    height: 100%;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -353,10 +353,19 @@ a{
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     padding: 0;
+    background-color: #121212;
 }
 .contacts, .navs{
     height: 100%;
     font-family: 'Marcellus', serif;
     font-weight: 300;
     font-size: 15px;
+    background-color: #121212;
+}
+.navs li a{
+    color: #fff;
+}
+.navs li a:hover{
+    color: #be9c79;
+    cursor: pointer;
 }

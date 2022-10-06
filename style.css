@@ -465,7 +465,12 @@ img.cover{
     font-weight: 300;
     font-size: 15px;
     background-color: #121212;
-
 }
-
+.navs li a{
+    color: #fff;
+}
+.navs li a:hover{
+    color: #be9c79;
+    cursor: pointer;
+}
 
