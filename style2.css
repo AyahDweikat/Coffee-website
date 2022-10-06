@@ -28,19 +28,26 @@ a{
 }
 .navbar-nav .nav-item .nav-link.active::after{
     width: 100%;
+    width: 17%;
 }
 .navbar-nav .nav-item .nav-link.active{
-    width:100%;
+    width: 100%;
 }
 .navbar-nav .nav-item .nav-link::after{
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0rem;
+    right: 0rem;
     width: 0%;
-    height: 2px;
+    height: 0.125rem;
     background-color: #fff;
     transition: .5s;
+}
+.navbar-toggler{
+    background-color: #fff;
+}
+.navbar-toggler-icon{
+    color: #fff !important;
 }
 .dropdown-toggle::after {
     border-top: 0;
@@ -48,8 +55,14 @@ a{
     border-bottom: 0;
     border-left: 0;
 }
+.side-bar{
+    float: right;
+    text-align: right;
+    width: 20%;
+}
 .navbar-nav .nav-item .nav-link:hover::after{
     width: 100%;
+    width: 17%;
 }
 /*Headar*/
 .header{
@@ -65,7 +78,6 @@ a{
     font-weight: 400;
     padding-top: 170px;
     text-align: center;
-    /* margin-left: 547px; */
     text-transform: uppercase;
     font-family:'Marcellus', serif ;
     font-size: 60px;
@@ -176,33 +188,33 @@ a{
 /* COUNTER */ 
 .counter-items{
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
     text-align: center;
 }
 .counter-item {
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 .counter-item h3{
     color: #be9c79;
     font-family:'Marcellus', serif;
-    font-size: 55px;
-    margin-bottom: 20px;
+    font-size: 3.4375rem;
+    margin-bottom: 1.25rem;
 }
 .counter-item h4{
     color: rgb(38, 38, 38);
     font-family:'Marcellus', serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .counter-item p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    line-height: 26px;
+    font-size: 0.975rem;
+    line-height: 1.625rem;
     font-weight: 300;
     color: #656565;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     padding: 0;
 }
 /* CONTACT US */
@@ -214,7 +226,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 0px;
+    padding: 6.25rem 0rem;
 }
 .contact-us .btn{
     border-radius: 0;
@@ -222,9 +234,9 @@ a{
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     border-color: #be9c79;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
-    padding: 16px 40px;
+    padding: 1rem 2.5rem;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
@@ -236,7 +248,7 @@ a{
     cursor: pointer;
 }
 .contact-us span{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 /* Footer PART-1 */
@@ -252,32 +264,32 @@ a{
     align-items: center;
 }
 .logo-footer{
-    max-width: 159px;
+    max-width: 10rem;
     height: auto;
-    margin-top: 105px;
-    margin-bottom: 30px;
+    margin-top: 6.5625rem;
+    margin-bottom: 1.875rem;
 }
 .stores .stores-content span {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
 }
 .stores .stores-content h4{
-    margin-top: 60px;
-    font-size: 20px;
+    margin-top: 3.75rem;
+    font-size: 1.25rem;
     font-weight: 400;
     font-family: 'Marcellus', serif;
 }
 .stores .stores-content .email-desc{
-    margin-top: 60px;
-    margin-bottom: 15px;
-    font-size: 20px;
+    margin-top: 3.75rem;
+    margin-bottom: 0.9375rem;
+    font-size: 1.25rem;
     font-weight: 400;
     font-family: 'Marcellus', serif;
 }
 .stores a span{
     color: #fff;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
 }
@@ -286,12 +298,12 @@ a{
     cursor: pointer;
 }
 .input-group {
-    max-width: 330px;
+    max-width: 20.625rem;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
 }
 .stores .form-control{
-    padding: 19px 23px;
+    padding: 1.1875rem 1.4375rem;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -314,9 +326,9 @@ a{
     border: 1px solid #be9c79;
 }
 .email-icon{
-    font-size: 24px;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 1.5rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
 }
 /* FOOTER PART-2 */
 .part2{
@@ -331,7 +343,7 @@ a{
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 3.75rem;
 }
 .part2 ul li:hover{
     color: #be9c79;
@@ -351,16 +363,16 @@ a{
     height: 100%;
     justify-content: center;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-family: 'Open Sans', sans-serif;
-    padding: 0;
+    padding: 0rem;
     background-color: #121212;
 }
 .contacts, .navs{
     height: 100%;
     font-family: 'Marcellus', serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 0.9375rem;
     background-color: #121212;
 }
 .navs li a{
@@ -370,3 +382,4 @@ a{
     color: #be9c79;
     cursor: pointer;
 }
+

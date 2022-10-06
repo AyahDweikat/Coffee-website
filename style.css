@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-
 a{
     text-decoration: none;
 }
@@ -30,6 +28,7 @@ a{
 }
 .navbar-nav .nav-item .nav-link.active::after{
     width: 100%;
+    width: 17%;
 }
 .navbar-nav .nav-item .nav-link.active{
     width: 100%;
@@ -37,12 +36,18 @@ a{
 .navbar-nav .nav-item .nav-link::after{
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0rem;
+    right: 0rem;
     width: 0%;
-    height: 2px;
+    height: 0.125rem;
     background-color: #fff;
     transition: .5s;
+}
+.navbar-toggler{
+    background-color: #fff;
+}
+.navbar-toggler-icon{
+    color: #fff !important;
 }
 .dropdown-toggle::after {
     border-top: 0;
@@ -50,28 +55,35 @@ a{
     border-bottom: 0;
     border-left: 0;
 }
+.side-bar{
+    float: right;
+    text-align: right;
+    width: 20%;
+}
 .navbar-nav .nav-item .nav-link:hover::after{
     width: 100%;
+    width: 17%;
 }
+/* Header */
 .carousel-item {
     height: 100hv;
     min-height: 300px;
-    background-size:cover ;
+    background-size:cover;
 }
 .carousel-caption{
     bottom: 0px;
     right: -200px;
 }
 .carousel-caption img{
-   margin-top: 0px;
+   margin-top: 0rem;
 }
 img.cover{
     height: 100vh;
     width: 100%;
- }
+}
 .carousel-caption h5{
-    font-size: 68px;
-    line-height: 78px;
+    font-size: 4.25rem;
+    line-height: 4.875rem;
     text-transform: uppercase;
     font-weight: 400;
     color: rgb(255, 255, 255);
@@ -79,16 +91,16 @@ img.cover{
 }
 .carousel-caption p{
     width:600px;
-    font-size: 16px;
+    font-size: 1rem;
     margin: auto;
-    margin-top: 30px;
-    line-height: 28px;
+    margin-top: 1.875rem;
+    line-height: 1.75rem;
     font-weight: 300;
     color: rgb(255, 255, 255);
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    padding: 0px;
-    margin-bottom: 30px;
+    padding: 0rem;
+    margin-bottom: 1.875rem;
 }
 .carousel-caption .btn{
     border-radius: 0;
@@ -96,9 +108,9 @@ img.cover{
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
-    padding: 20px 50px;
+    padding: 1.25rem 3.125rem;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
@@ -108,17 +120,16 @@ img.cover{
     background-color: #be9c79;
     cursor: pointer;
 }
-/* end navbar*/
-/* start offer*/
+/* OFFER */
 .offer h2{
     text-transform: uppercase;
     text-align: center;
     font-weight: 400;
     color: #262626;
-    margin-top: 125px;
-    font-size: 45px;
+    margin-top: 7.8125rem;
+    font-size: 2.8125rem;
     font-family: 'Marcellus', serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 .offer .leaves{
     display: flex;
@@ -127,14 +138,14 @@ img.cover{
 }
 .offer-dec p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     text-align: center;
     font-weight: 300;
     color: #656565;
     width: 44%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .offer-item a{
     color: #262626;
@@ -143,7 +154,7 @@ img.cover{
 .offer-item a h3{
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .offer-item a h3:hover{
     color: #be9c79;
@@ -151,15 +162,14 @@ img.cover{
 }
 .offer-item p{
     font-family: open sans,sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 26px;
     font-weight: 300;
     color: #656565;
     margin: auto;
-    margin-bottom:  100px;
+    margin-bottom: 6.25rem;
     padding: 0;
 }
-/* end offer*/
 /* Herald */
 .herald{
     background-image: url('img/new-new-h1-bacground-img-3.jpg');
@@ -169,8 +179,8 @@ img.cover{
     text-align: center;
     font-weight: 400;
     color: #262626;
-    padding-top: 120px;
-    font-size: 45px;
+    padding-top: 7.5rem;
+    font-size: 2.8125rem;
     font-family: 'Marcellus', serif;
     letter-spacing: 2px;
 }
@@ -181,22 +191,22 @@ img.cover{
 }
 .herald-dec p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     text-align: center;
     font-weight: 300;
     color: #656565;
     width: 44%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .herald .row{
     --bs-gutter-x: 0rem;
 }
 .herald-items{
-    margin-top: 50px;
+    margin-top: 3.125rem;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -204,13 +214,13 @@ img.cover{
 .herald-item a{
     color: #262626;
     font-family:'Marcellus', serif;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
 }
 .herald-item a h3{
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .herald-item a h3:hover{
     color: #be9c79;
@@ -218,30 +228,29 @@ img.cover{
 }
 .herald-item p{
     font-family: open sans,sans-serif;
-    font-size: 15px;
-    line-height: 26px;
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
     font-weight: 300;
     color: #656565;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     padding: 0;
 }
 .herald-item a span:hover{
     color: #be9c79;
     cursor: pointer;
-    padding-left: 10px;
+    padding-left: 0.625rem;
 }
-/*end herald*/
 /* Sweet */
 .sweet h2{
     text-transform: uppercase;
     text-align: center;
     font-weight: 400;
     color: #262626;
-    padding-top: 60px;
-    font-size: 45px;
+    padding-top: 3.75rem;
+    font-size: 2.8125rem;
     font-family: 'Marcellus', serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 .sweet .leaves{
     display: flex;
@@ -250,23 +259,23 @@ img.cover{
 }
 .sweet-dec p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 26px;
     text-align: center;
     font-weight: 300;
     color: #656565;
     width: 44%;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
 }
 .sweet-items{
-    margin-top: 50px;
+    margin-top: 3.125rem;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 }
 .sweet-item {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 .sweet-item a{
     color: #262626;
@@ -275,33 +284,33 @@ img.cover{
 /* COUNTER */
 .counter-items{
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
     text-align: center;
 }
 .counter-item {
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 .counter-item h3{
     color: #be9c79;
     font-family:'Marcellus', serif;
-    font-size: 55px;
-    margin-bottom: 20px;
+    font-size: 3.4375rem;
+    margin-bottom: 1.25rem;
 }
 .counter-item h4{
     color: rgb(38, 38, 38);
     font-family:'Marcellus', serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .counter-item p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    line-height: 26px;
+    font-size: 0.975rem;
+    line-height: 1.625rem;
     font-weight: 300;
     color: #656565;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     padding: 0;
 }
 /* CONTACT US */
@@ -313,7 +322,7 @@ img.cover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 0px;
+    padding: 6.25rem 0rem;
 }
 .contact-us .btn{
     border-radius: 0;
@@ -321,9 +330,9 @@ img.cover{
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     border-color: #be9c79;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
-    padding: 16px 40px;
+    padding: 1rem 2.5rem;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
@@ -335,7 +344,7 @@ img.cover{
     cursor: pointer;
 }
 .contact-us span{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 /* Footer PART-1 */
@@ -351,32 +360,32 @@ img.cover{
     align-items: center;
 }
 .logo-footer{
-    max-width: 159px;
+    max-width: 10rem;
     height: auto;
-    margin-top: 105px;
-    margin-bottom: 30px;
+    margin-top: 6.5625rem;
+    margin-bottom: 1.875rem;
 }
 .stores .stores-content span {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
 }
 .stores .stores-content h4{
-    margin-top: 60px;
-    font-size: 20px;
+    margin-top: 3.75rem;
+    font-size: 1.25rem;
     font-weight: 400;
     font-family: 'Marcellus', serif;
 }
 .stores .stores-content .email-desc{
-    margin-top: 60px;
-    margin-bottom: 15px;
-    font-size: 20px;
+    margin-top: 3.75rem;
+    margin-bottom: 0.9375rem;
+    font-size: 1.25rem;
     font-weight: 400;
     font-family: 'Marcellus', serif;
 }
 .stores a span{
     color: #fff;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
 }
@@ -385,12 +394,12 @@ img.cover{
     cursor: pointer;
 }
 .input-group {
-    max-width: 330px;
+    max-width: 20.625rem;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
 }
 .stores .form-control{
-    padding: 19px 23px;
+    padding: 1.1875rem 1.4375rem;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -413,9 +422,9 @@ img.cover{
     border: 1px solid #be9c79;
 }
 .email-icon{
-    font-size: 24px;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 1.5rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
 }
 /* FOOTER PART-2 */
 .part2{
@@ -430,7 +439,7 @@ img.cover{
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 3.75rem;
 }
 .part2 ul li:hover{
     color: #be9c79;
@@ -450,17 +459,16 @@ img.cover{
     height: 100%;
     justify-content: center;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-family: 'Open Sans', sans-serif;
-    padding: 0;
+    padding: 0rem;
     background-color: #121212;
-
 }
 .contacts, .navs{
     height: 100%;
     font-family: 'Marcellus', serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 0.9375rem;
     background-color: #121212;
 }
 .navs li a{
@@ -471,3 +479,68 @@ img.cover{
     cursor: pointer;
 }
 
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width:576px) {
+    .logo{
+        margin: auto;
+    }
+    .logo a img{
+        height: 50px;
+    }
+    .carousel-caption img{
+        margin-top: 0rem;
+        display: none;
+     }
+    .carousel-caption{
+        bottom: 0px;
+        right: 0px;
+    }
+    .carousel-caption h5{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .carousel-caption p{
+        width:90%;
+        font-size: 1rem;
+        margin: auto;
+        margin-top: 1.875rem;
+        padding: 0rem;
+        margin-bottom: 1.875rem;
+    }
+    .carousel-caption .btn{
+        border-radius: 0;
+        background-color: transparent;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 1.25rem 3.125rem;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    .carousel-caption .btn:hover{
+        background-color: #be9c79;
+        cursor: pointer;
+    }
+
+
+
+
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width:767px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width:991px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width:1199px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
