@@ -295,7 +295,7 @@ img.cover{
     margin-bottom: 10px;
 }
 .counter-item p{
-    font-family: open sans,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 26px;
     font-weight: 300;
@@ -419,7 +419,6 @@ img.cover{
 }
 /* FOOTER PART-2 */
 .part2{
-    /* height: 165px; */
     color: #fff;
     background-color: #121212;
     text-align: center;
