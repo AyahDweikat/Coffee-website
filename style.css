@@ -120,11 +120,10 @@ img.cover{
     font-family: 'Marcellus', serif;
     letter-spacing: 2px;
 }
-.offer .img img{
-    text-align: center;
-    margin: 10px 0px;
-    margin-left: 460px;
-    /* width: 25%; */
+.offer .leaves{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .offer-dec p{
     font-family: 'Open Sans', sans-serif;
@@ -175,11 +174,10 @@ img.cover{
     font-family: 'Marcellus', serif;
     letter-spacing: 2px;
 }
-.herald .img img{
-    text-align: center;
-    margin: 10px 0px;
-    margin-left: 460px;
-    /* padding-bottom: 50px; */
+.herald .leaves{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .herald-dec p{
     font-family: 'Open Sans', sans-serif;
