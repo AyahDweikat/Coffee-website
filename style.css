@@ -44,7 +44,7 @@ a{
     transition: .5s;
 }
 .navbar-toggler{
-    background-color: #fff;
+    background-color:#be9c79;
 }
 .navbar-toggler-icon{
     color: #fff !important;
@@ -65,6 +65,9 @@ a{
     width: 17%;
 }
 /* Header */
+.carousel{
+    opacity: 0.9;
+}
 .carousel-item {
     height: 100hv;
     min-height: 300px;
@@ -227,7 +230,7 @@ img.cover{
     cursor: pointer;
 }
 .herald-item p{
-    font-family: open sans,sans-serif;
+    font-family: 'open sans',sans-serif;
     font-size: 0.9375rem;
     line-height: 1.625rem;
     font-weight: 300;
@@ -482,19 +485,23 @@ img.cover{
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media screen and (max-width:576px) {
+    /* Navbar */
     .logo{
         margin: auto;
     }
     .logo a img{
         height: 50px;
     }
+    /* Header */
     .carousel-caption img{
         margin-top: 0rem;
         display: none;
      }
     .carousel-caption{
+        top:350px;
         bottom: 0px;
         right: 0px;
+        left:0;
     }
     .carousel-caption h5{
         font-size: 2rem;
@@ -502,35 +509,148 @@ img.cover{
     }
     .carousel-caption p{
         width:90%;
-        font-size: 1rem;
         margin: auto;
-        margin-top: 1.875rem;
-        padding: 0rem;
+        margin-top: 0rem;
         margin-bottom: 1.875rem;
     }
     .carousel-caption .btn{
-        border-radius: 0;
-        background-color: transparent;
-        text-transform: uppercase;
-        color: rgb(255, 255, 255);
-        border-color: rgb(255, 255, 255);
         font-size: 0.875rem;
-        font-weight: 600;
         padding: 1.25rem 3.125rem;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
     }
-    .carousel-caption .btn:hover{
-        background-color: #be9c79;
-        cursor: pointer;
+    /* OFFER */
+    .offer h2{
+        margin-top: 4rem;
+        font-size: 1.6rem;
     }
-
-
-
-
-    
+    .offer-dec p{
+        font-size: 1.125rem;
+        width: 75%;
+        margin-top: 1.25rem;
+    }
+    /* HERALD */
+    .herald h2{
+        padding-top: 4rem;
+        font-size: 1.6rem;
+    }
+    .herald-dec p{
+        font-size: 1.125rem;
+        width: 75%;
+        margin-top: 1.25rem;
+    }
+    .herald-items{
+        margin-top: 3.125rem;
+        width: 100%;
+        padding-bottom: 3.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .herald-item{
+        margin-bottom: 3rem;
+    }
+    .herald-item a h3{
+        font-size: 1.25rem;
+    }
+    .herald-item p{
+        font-size: 0.9375rem;
+        margin: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0;
+    }
+    /* SWEET */
+    .sweet h2{
+        padding-top: 2rem;
+        font-size: 1.6rem;
+    }
+    .sweet-dec p{
+        font-size: 1.125rem;
+        width: 75%;
+        margin-top: 1.25rem;
+    }
+    /* COUNTER */
+    .counter-items{
+        padding-bottom: 2rem;
+    }
+    .counter-item {
+        margin-top: 3rem;
+    }
+    .counter-item h3{
+        font-size: 3.4375rem;
+        margin-bottom: 1.25rem;
+    }
+    .counter-item h4{
+        font-size: 1.25rem;
+        margin-bottom: 0.625rem;
+    }
+    .counter-item p{
+        font-size: 0.975rem;
+        margin-bottom: 0.9375rem;
+    }
+    /* CONTACT US */
+    .contact-us .row{
+        padding: 4rem 0rem;
+    }
+    .contact-us .btn{
+        font-size: 0.875rem;
+        padding: 0.8rem 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .contact-us span{
+        font-size: 1rem;
+    }
+    /* FOTER PART-1 */
+    .logo-footer{
+        max-width: 10rem;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .stores .stores-content span {
+        font-size: 0.8rem;
+    }
+    .stores .stores-content h4{
+        margin-top: 2rem;
+        font-size: 1.25rem;
+    }
+    .stores .stores-content .email-desc{
+        margin-top: 2rem;
+        margin-bottom: 0.9375rem;
+        font-size: 1.25rem;
+    }
+    .stores a span{
+        color: #fff;
+        font-size: 0.9375rem;
+    }
+    .input-group {
+        max-width: 20.625rem;
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+    .stores .form-control{
+        padding: 1.1875rem 1.4375rem;
+    }
+    /* FOTER PART-2 */
+    .part2 ul{
+        padding-top: 2rem;
+    }
+    .copyright{
+        font-size: 0.9375rem;
+    }
+    .part2 .contacts ul{
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        
+        padding: 0;
+        padding-top: 3.75rem;
+    }
+    .part2 .contacts li{
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
