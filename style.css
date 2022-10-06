@@ -108,7 +108,7 @@ img.cover{
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     padding: 1.25rem 3.125rem;
     -webkit-border-radius: 0;
@@ -120,7 +120,7 @@ img.cover{
     background-color: #be9c79;
     cursor: pointer;
 }
-/* start offer*/
+/* OFFER */
 .offer h2{
     text-transform: uppercase;
     text-align: center;
@@ -170,7 +170,6 @@ img.cover{
     margin-bottom: 6.25rem;
     padding: 0;
 }
-/* end offer*/
 /* Herald */
 .herald{
     background-image: url('img/new-new-h1-bacground-img-3.jpg');
@@ -242,7 +241,6 @@ img.cover{
     cursor: pointer;
     padding-left: 0.625rem;
 }
-/*end herald*/
 /* Sweet */
 .sweet h2{
     text-transform: uppercase;
@@ -465,7 +463,6 @@ img.cover{
     font-family: 'Open Sans', sans-serif;
     padding: 0rem;
     background-color: #121212;
-
 }
 .contacts, .navs{
     height: 100%;
