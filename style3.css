@@ -297,3 +297,271 @@ a{
     cursor: pointer;
 }
 
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width:576px) {
+    /* Navbar */
+    .logo{
+        margin: auto;
+    }
+    .logo a img{
+        height: 50px;
+    }
+    .navbar-nav .nav-item .nav-link{
+        font-size: 15px;
+    }
+    .navbar-nav .nav-item{
+        margin-left:40px;
+    }
+    .navbar-nav .nav-item .nav-link.active::after{
+        width: 17%;
+        width: 60px;
+    }
+    .navbar-nav .nav-item .nav-link.active{
+        width: 100%;
+    }
+    .navbar-nav .nav-item .nav-link::after{
+        bottom: 0rem;
+        right: 0rem;
+        width: 0%;
+        height: 0.125rem;
+        transition: .5s;
+    }
+    .dropdown-toggle::after {
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+    }
+    .side-bar{
+        float: right;
+        text-align: right;
+        width: 17%;
+        width: 60px;
+    }
+    .navbar-nav .nav-item .nav-link:hover::after{
+        width: 100%;
+        width: 17%;
+        width: 60px;
+    }
+    /* HEADER */
+    .header-title {
+        font-size: 43px;
+    }
+    /* TOUCH */
+
+
+    /* MAP */
+
+    /* FOOTER PART-1 */
+    .logo-footer{
+        max-width: 10rem;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .stores .stores-content span {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .stores .stores-content h4{
+        margin-top: 2rem;
+        font-size: 1.25rem;
+    }
+    .stores .stores-content .email-desc{
+        margin-top: 2rem;
+        margin-bottom: 0.9375rem;
+        font-size: 1.25rem;
+    }
+    .stores a span{
+        color: #fff;
+        font-size: 0.9375rem;
+    }
+    .input-group {
+        max-width: 20.625rem;
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+    .stores .form-control{
+        padding: 1.1875rem 1.4375rem;
+    }
+    /* FOTER PART-2 */
+    .part2 ul{
+        padding-top: 2rem;
+    }
+    .copyright{
+        font-size: 0.9375rem;
+    }
+    .part2 .contacts ul{
+        height: 100%;
+        padding: 0;
+        padding-top: 3.75rem;
+    }
+    .part2 .contacts li{
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width:767px) {
+    /* Navbar */
+    .logo{
+        margin: auto;
+    }
+    .logo a img{
+        height: 50px;
+    }
+    .navbar-nav .nav-item .nav-link{
+        font-size: 15px;
+    }
+    .navbar-nav .nav-item{
+        margin-left:40px;
+    }
+    .navbar-nav .nav-item .nav-link.active::after{
+        width: 60px;
+        
+    }
+    .navbar-nav .nav-item .nav-link.active{
+        width: 100%;
+    }
+    .navbar-nav .nav-item .nav-link::after{
+        bottom: 0rem;
+        right: 0rem;
+        width: 0%;
+        height: 0.125rem;
+        transition: .5s;
+    }
+    .dropdown-toggle::after {
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+    }
+    .side-bar{
+        float: right;
+        text-align: right;
+        width: 60px;
+    }
+    .navbar-nav .nav-item .nav-link:hover::after{
+        width: 60px;
+    }
+    /* HEADER */
+    .header-title {
+        font-size: 50px;
+    }
+    /* TOUCH */
+
+
+    /* MAP */
+
+
+    /* FOTER PART-1 */
+    .logo-footer{
+        max-width: 10rem;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .stores .stores-content span {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .stores .stores-content h4{
+        margin-top: 2rem;
+        font-size: 1.25rem;
+    }
+    .stores .stores-content .email-desc{
+        margin-top: 2rem;
+        margin-bottom: 0.9375rem;
+        font-size: 1.25rem;
+    }
+    .stores a span{
+        color: #fff;
+        font-size: 0.9375rem;
+    }
+    .input-group {
+        max-width: 20.625rem;
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+    .stores .form-control{
+        padding: 1.1875rem 1.4375rem;
+    }
+    /* FOTER PART-2 */
+    .part2 ul{
+        padding-top: 2rem;
+    }
+    .copyright{
+        font-size: 0.9375rem;
+    }
+    .part2 .contacts ul{
+        height: 100%;
+        padding: 0;
+        padding-top: 3.75rem;
+    }
+    .part2 .contacts li{
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width:991px) {
+    /* Navbar */
+    .logo a img{
+        height: 50px;
+    }
+    .navbar-nav .nav-item .nav-link{
+        font-size: 15px;
+    }
+    .navbar-nav .nav-item{
+        margin-left:40px;
+    }
+    .navbar-nav .nav-item .nav-link.active::after{
+        width:60px;
+    }
+    .navbar-nav .nav-item .nav-link.active{
+        width: 100%;
+    }
+    .navbar-nav .nav-item .nav-link::after{
+        bottom: 0rem;
+        right: 0rem;
+        width: 0%;
+        height: 0.125rem;
+        transition: .5s;
+    }
+    .dropdown-toggle::after {
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+    }
+    .side-bar{
+        float: right;
+        text-align: right;
+        width:60px;
+    }
+    .navbar-nav .nav-item .nav-link:hover::after{
+        width:60px;
+    }
+    /* HEADER */
+    .header-title {
+        font-size: 70px;
+    }
+    /* TOUCH */
+
+
+    /* MAP */
+    
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width:1199px) {
+    /* TOUCH */
+
+
+    /* MAP */
+
+
+}
