@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+a{
+    text-decoration: none;
+}
+/* start navbar*/
+.logo a img{
+    width: 100%;
+    height: 55px;
+    cursor: pointer;
+    margin-left:30px;
+    margin-top: 0px;
+    padding: 0;
+}
+.navbar-nav .nav-item .nav-link{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 23px;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Marcellus', serif;
+}
+.navbar-nav .nav-item{
+    margin-left:40px;
+}
+.navbar-nav .nav-item .nav-link.active::after{
+    width: 100%;
+}
+.navbar-nav .nav-item .nav-link.active{
+    width: 100%;
+}
+.navbar-nav .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    width: 0%;
+    height: 0.125rem;
+    background-color: #fff;
+    transition: .5s;
+}
+.navbar-toggler{
+    background-color:#fff;
+}
+.navbar-toggler-icon{
+    color: #fff !important;
+}
+.dropdown-toggle::after {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.side-bar{
+    float: right;
+    text-align: right;
+    width: 20%;
+}
+.navbar-nav .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+/*Headar*/
+.header{
+    background-image: url('img/img\ of\ contact.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 480px;
+    background-position: center 0px;
+    margin-bottom: 70px;
+}
+.header-title {
+    line-height: 1.22em;
+    font-weight: 400;
+    padding-top: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:'Marcellus', serif ;
+    font-size: 70px;
+}
+.header-title span{
+    margin-top: 50px;
+}
+.overlay{
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+/*touch*/
+.touch ul{
+    list-style-type: none;
+}
+.cont-desc{
+    width: 50%;
+}
+.cont-desc h2{
+    text-transform: uppercase;
+    font-family:'Marcellus', serif ;
+    font-size: 35px;
+    line-height: 1.28em;
+    letter-spacing: 1.75px;
+    color: #262626;
+    font-weight: 400;
+}
+.cont-desc p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    font-style:inherit;
+    color: #656565;
+    display: block;
+}
+.cont-desc li i{
+    color: #be9c79;
+    font-size: 7px;
+}
+.cont-desc li span{
+    padding-left: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #656565;
+}
+.cont-desc .icons a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin: 0 20px 3px 0;
+    line-height: 26px;
+    font-weight: 300;
+    color: #656565;
+}
+.cont-desc .icons a:hover{
+    color: #be9c79;
+}
+.cont-info{
+    width: 50%;
+    float: right;
+}
+.inf1 .btn{
+    border-radius: 0;
+    background-color: transparent;
+    border-color: #000;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 1.25rem 3.125rem;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+/*map*/
+.map .location-map{
+    cursor: url(img/cursor.cur);
+    width: 100%;
+   /* background-color: rgb(229, 227, 223);*/
+}
+.map .location-map map{
+    width: 100%;
+}
+/* Footer PART-1 */
+.stores{
+    background-image: url('img/footer-top-img-1.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.stores .stores-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-footer{
+    max-width: 10rem;
+    height: auto;
+    margin-top: 6.5625rem;
+    margin-bottom: 1.875rem;
+}
+.stores .stores-content span {
+    font-size: 0.9375rem;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.stores .stores-content h4{
+    margin-top: 3.75rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: 'Marcellus', serif;
+}
+.stores .stores-content .email-desc{
+    margin-top: 3.75rem;
+    margin-bottom: 0.9375rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: 'Marcellus', serif;
+}
+.stores a span{
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+.stores a span:hover{
+    color: #be9c79;
+    cursor: pointer;
+}
+.input-group {
+    max-width: 20.625rem;
+    width: 100%;
+    padding-bottom: 6.25rem;
+}
+.stores .form-control{
+    padding: 1.1875rem 1.4375rem;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.input-group-text{
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    background-color: #fff;
+}
+.input-group-text:hover{
+    background-color: #be9c79;
+    border: 1px solid #be9c79;
+}
+.email-icon{
+    font-size: 1.5rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+}
+/* FOOTER PART-2 */
+.part2{
+    color: #fff;
+    background-color: #121212;
+    text-align: center;
+}
+.part2 ul{
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 3.75rem;
+}
+.part2 ul li:hover{
+    color: #be9c79;
+}
+.part2 span a{
+    color: #fff;
+}
+.part2 span a:hover{
+    color: #be9c79;
+}
+.container{
+    height: 100%;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 0.9375rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0rem;
+    background-color: #121212;
+}
+.contacts, .navs{
+    height: 100%;
+    font-family: 'Marcellus', serif;
+    font-weight: 300;
+    font-size: 0.9375rem;
+    background-color: #121212;
+}
+.navs li a{
+    color: #fff;
+}
+.navs li a:hover{
+    color: #be9c79;
+    cursor: pointer;
+}
+
