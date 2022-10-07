@@ -428,13 +428,84 @@ a{
         width: 60px;
     }
     /* HEADER */
-
+    .header-title {
+        font-size: 43px;
+    }
 
     /* ABOUT */
-
-
+    .about-des img{
+       width: 50%;
+    }
+    .about-des h2{
+        font-size:30px ;
+    }
+    .about-des p{
+        font-size: 15px;
+    }
+    .item img{
+        margin-bottom:30px ;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+    .item p{
+        font-size: 9px
+    }
     /* TESTIMONIAL */
-
+    .testimonial{
+        padding: 150px 0;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 50% -26px;
+    }
+    .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        background-attachment: fixed;
+        background-position: 50% 28px;
+        background-size: cover;
+    }
+    .carousel-indicators [data-bs-target]{
+        background-color: #fff;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+    }
+    .carousel-caption{
+        bottom: 220px;
+    }
+    .carousel-caption h5{
+        text-transform: uppercase;
+        color: #fff;
+        font-family:'Marcellus', serif;
+        font-size: 45px;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+    .carousel-caption img{
+        margin-bottom: 30px;
+    }
+    .carousel-caption p{
+        color: #fff;
+        font-size: 16px;
+        line-height: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+    .carousel-caption .spa1{
+       text-transform: uppercase;
+       font-family: 'Marcellus', serif;
+       font-size: 16px;
+        letter-spacing: .5px;
+        font-weight: 300;
+    }
+    .carousel-caption .spa2{
+        font-style: italic;
+        font-size: 16px;
+        letter-spacing: .5px;
+        font-weight: 300;
+    }
 
     /* COUNTER */
     .counter-items{
@@ -561,13 +632,84 @@ a{
         width: 60px;
     }
     /* HEADER */
-
-    
+    .header-title {
+        font-size: 50px;
+    }
     /* ABOUT */
-
-
+    .about-des img{
+        width: 75%;
+    }
+    .about-des h2{
+         font-size:30px ;
+    }
+    .about-des p{
+         font-size: 17px;
+    }
+    .item img{
+         margin-bottom:30px ;
+         box-sizing: border-box;
+         padding-left: 15px;
+         padding-right: 15px;
+         width: 100%;
+    }
+    .item p{
+        font-size: 9px
+    }
     /* TESTIMONIAL */
-
+    .testimonial{
+        padding: 150px 0;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 50% -26px;
+    }
+    .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        background-attachment: fixed;
+        background-position: 50% 28px;
+        background-size: cover;
+    }
+    .carousel-indicators [data-bs-target]{
+        background-color: #fff;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+    }
+    .carousel-caption{
+        bottom: 220px;
+    }
+    .carousel-caption h5{
+        text-transform: uppercase;
+        color: #fff;
+        font-family:'Marcellus', serif;
+        font-size: 45px;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+    .carousel-caption img{
+        margin-bottom: 30px;
+    }
+    .carousel-caption p{
+        color: #fff;
+        font-size: 16px;
+        line-height: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+    .carousel-caption .spa1{
+       text-transform: uppercase;
+       font-family: 'Marcellus', serif;
+       font-size: 16px;
+        letter-spacing: .5px;
+        font-weight: 300;
+    }
+    .carousel-caption .spa2{
+        font-style: italic;
+        font-size: 16px;
+        letter-spacing: .5px;
+        font-weight: 300;
+    }
+    
 
     /* COUNTER */
     .counter-items{
@@ -690,12 +832,83 @@ a{
         width:60px;
     }
     /* HEADER */
-
-    
+    .header-title {
+        font-size: 70px;
+    }
     /* ABOUT */
-
-
+    .about-des img{
+        width:30%;
+    }
+    .about-des h2{
+         font-size:40px ;
+    }
+    .about-des p{
+         font-size: 20px;
+    }
+    .item img{
+         margin-bottom:30px ;
+         box-sizing: border-box;
+         padding-left: 15px;
+         padding-right: 15px;
+         width: 100%;
+    }
+    .item p{
+        font-size: 12px;
+    }
     /* TESTIMONIAL */
+    .testimonial{
+        padding: 150px 0;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 50% -26px;
+    }
+    .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        background-attachment: fixed;
+        background-position: 50% 28px;
+        background-size: cover;
+    }
+    .carousel-indicators [data-bs-target]{
+        background-color: #fff;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+    }
+    .carousel-caption{
+        bottom: 220px;
+    }
+    .carousel-caption h5{
+        text-transform: uppercase;
+        color: #fff;
+        font-family:'Marcellus', serif;
+        font-size: 45px;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+    .carousel-caption img{
+        margin-bottom: 30px;
+    }
+    .carousel-caption p{
+        color: #fff;
+        font-size: 16px;
+        line-height: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+    .carousel-caption .spa1{
+       text-transform: uppercase;
+       font-family: 'Marcellus', serif;
+       font-size: 16px;
+        letter-spacing: .5px;
+        font-weight: 300;
+    }
+    .carousel-caption .spa2{
+        font-style: italic;
+        font-size: 16px;
+        letter-spacing: .5px;
+        font-weight: 300;
+    }
     
 
 }
