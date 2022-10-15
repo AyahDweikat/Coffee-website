@@ -1,6 +1,11 @@
-var num1 = document.getElementById("counter1").innerHTML;
-
-for(let i=0; i<=num1; i++){
-    document.getElementById("counter1").innerHTML =i;
-}
-
+$(window).scroll(function(){
+    let t = $(window).scrollTop();
+    if(t >= 300){
+      $('.navbar').addClass('bg-black')
+      $('.navbar').removeClass('bg-transparent')
+      $('.navbar').css('tranisition','1s')
+    }else{
+        $('.navbar').addClass('bg-transparent')
+        $('.navbar').removeClass('bg-black')  
+    }
+})
