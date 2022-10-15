@@ -64,7 +64,7 @@ a{
 }
 /*Headar*/
 .header{
-    background-image: url('img/p2-title-img-1.jpg');
+    background-image: url('../img/p2-title-img-1.jpg');
     background-size: cover;
     background-attachment: fixed;
     height: 480px;
@@ -223,7 +223,7 @@ a{
 }
 /* CONTACT US */
 .contact-us{
-    background-image: url('img/p2-background-img-1\ \(1\).jpg');
+    background-image: url('../img/p2-background-img-1\ \(1\).jpg');
 }
 .contact-us .row{
     text-align: center;
@@ -257,7 +257,7 @@ a{
 }
 /* Footer PART-1 */
 .stores{
-    background-image: url('img/footer-top-img-1.jpg');
+    background-image: url('../img/footer-top-img-1.jpg');
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -456,50 +456,41 @@ a{
         margin-bottom: 50px;
     }
     /* TESTIMONIAL */
-    .testimonial{
-        padding: 10px 0;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: 50% -26px;
+    .carousel-caption{
+        margin-top: 20px;
+        top:0;
+        padding-top:10px;
     }
-
     .carousel-item {
         height: 100vh;
-        min-height: 300px;
-        background-attachment: fixed;
-        background-position: 50% 28px;
-        background-size: cover;
-    }
-    .carousel-item .leaves{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .carousel-indicators [data-bs-target]{
-        background-color: #fff;
-        width: 11px;
-        height: 11px;
-        border-radius: 50%;
-    }
-    .carousel-caption{
-        margin-top: 10px;
     }
     .carousel-caption h5{
-        font-size: 20px;
+        font-size: 22px;
+    }
+    .carousel-item .leaves{
+        width: 60%;
+        margin: auto;
     }
     .carousel-caption img{
         margin-bottom: 10px;
     }
+    .carousel-caption{
+        margin-top: 10px;
+    }
     .carousel-caption p{
-        font-size: 10px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 7px;
+        width: 100% !important;
+        margin: auto;
     }
     .carousel-caption .spa1{
-       font-size: 16px;
-    }
-    .carousel-caption .spa2{
-        font-size: 16px;
-    }
-
+        font-size: 14px;
+     }
+     .carousel-caption .spa2{
+         font-size: 14px;
+     }
     /* COUNTER */
     .counter-items{
         padding-bottom: 2rem;
@@ -649,60 +640,22 @@ a{
         font-size: 9px
     }
     /* TESTIMONIAL */
-    .testimonial{
-        padding: 150px 0;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: 50% -26px;
-    }
-    .carousel-item {
-        height: 100vh;
-        min-height: 300px;
-        background-attachment: fixed;
-        background-position: 50% 28px;
-        background-size: cover;
-    }
-    .carousel-indicators [data-bs-target]{
-        background-color: #fff;
-        width: 11px;
-        height: 11px;
-        border-radius: 50%;
-    }
     .carousel-caption{
-        bottom: 220px;
+        margin-top: 20px;
+        top:0;
+        padding-top: 10px;
     }
     .carousel-caption h5{
-        text-transform: uppercase;
-        color: #fff;
-        font-family:'Marcellus', serif;
-        font-size: 45px;
-        letter-spacing: 2px;
-        font-weight: 400;
+        font-size: 36px;
     }
     .carousel-caption img{
         margin-bottom: 30px;
     }
     .carousel-caption p{
         color: #fff;
-        font-size: 16px;
-        line-height: 30px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
     }
-    .carousel-caption .spa1{
-       text-transform: uppercase;
-       font-family: 'Marcellus', serif;
-       font-size: 16px;
-        letter-spacing: .5px;
-        font-weight: 300;
-    }
-    .carousel-caption .spa2{
-        font-style: italic;
-        font-size: 16px;
-        letter-spacing: .5px;
-        font-weight: 300;
-    }
-    
 
     /* COUNTER */
     .counter-items{
@@ -849,61 +802,11 @@ a{
         font-size: 12px;
     }
     /* TESTIMONIAL */
-    .testimonial{
-        padding: 150px 0;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: 50% -26px;
-    }
-    .carousel-item {
-        height: 100vh;
-        min-height: 300px;
-        background-attachment: fixed;
-        background-position: 50% 28px;
-        background-size: cover;
-    }
-    .carousel-indicators [data-bs-target]{
-        background-color: #fff;
-        width: 11px;
-        height: 11px;
-        border-radius: 50%;
-    }
     .carousel-caption{
-        bottom: 220px;
+        margin-top: 20px;
+        top:0;
+        padding-top: 100px;
     }
-    .carousel-caption h5{
-        text-transform: uppercase;
-        color: #fff;
-        font-family:'Marcellus', serif;
-        font-size: 45px;
-        letter-spacing: 2px;
-        font-weight: 400;
-    }
-    .carousel-caption img{
-        margin-bottom: 30px;
-    }
-    .carousel-caption p{
-        color: #fff;
-        font-size: 16px;
-        line-height: 30px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-    }
-    .carousel-caption .spa1{
-       text-transform: uppercase;
-       font-family: 'Marcellus', serif;
-       font-size: 16px;
-        letter-spacing: .5px;
-        font-weight: 300;
-    }
-    .carousel-caption .spa2{
-        font-style: italic;
-        font-size: 16px;
-        letter-spacing: .5px;
-        font-weight: 300;
-    }
-    
-
 }
 
 /* Large devices (desktops, 992px and up) */

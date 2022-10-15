@@ -173,7 +173,7 @@ img.cover{
 }
 /* Herald */
 .herald{
-    background-image: url('img/new-new-h1-bacground-img-3.jpg');
+    background-image: url('../img/new-new-h1-bacground-img-3.jpg');
 }
 .herald h2{
     text-transform: uppercase;
@@ -316,7 +316,7 @@ img.cover{
 }
 /* CONTACT US */
 .contact-us{
-    background-image: url('img/p2-background-img-1\ \(1\).jpg');
+    background-image: url('../img/p2-background-img-1\ \(1\).jpg');
 }
 .contact-us .row{
     text-align: center;
@@ -350,7 +350,7 @@ img.cover{
 }
 /* Footer PART-1 */
 .stores{
-    background-image: url('img/footer-top-img-1.jpg');
+    background-image: url('../img/footer-top-img-1.jpg');
     background-position: center;
     background-size: cover;
     color: #fff;

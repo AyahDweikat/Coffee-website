@@ -10,7 +10,7 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="css/contact.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
@@ -27,7 +27,7 @@
               <a class="nav-link " aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"href="about">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,7 +41,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Contact</a>
+              <a class="nav-link active" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">log in</a>
@@ -58,12 +58,10 @@
         </div>
     </header>
     <div class="touch">
-        <div class="container  d-flex">
+        <div class="container attach">
             <div class="cont-desc">
                 <h2>Get in Touch</h2>
-                <p>It is important to take care of the patient, to be followed by the doctor, but it 
-                    <span>is a time of great pain and suffering. For to come to the smallest detail, no</span>
-                   <span> one should practice any kind of work except as some of it.</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
                 </p>                
                 <ul>
                     <li>
@@ -86,13 +84,19 @@
                 <ul class="icons d-flex">
                    <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
                    <a href="#"> <i class="fa-brands fa-twitter"></i></a>
-                   <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                   <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#"><i class="fa-brands fa-tumblr"></i></a>
                 </ul>
             </div>
             <div class="cont-info">
-                <button type="button" class="btn btn-primary btn-lg">Your Name</button>
-                <button type="button" class="btn btn-secondary btn-lg">Your Email</button>
+              <div class="name-email">
+                <input type="text" class="name" placeholder='Your Name'/>
+                <input type="email" class="email" placeholder='Your Email'/>
+              </div>
+              
+              <input type="text" class="subject" placeholder='Subject'/>
+              <input type="text" class="message" placeholder='Message Here'/>
+              <button class="send">SEND MESSAGE</button>
             </div> 
         </div>
     </div>
@@ -137,7 +141,7 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="#">MENU</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
               </ul>
             </div>
             <div class="offset-0 offset-md-2 col-ms-4 col-md-2 contacts mb-5">
