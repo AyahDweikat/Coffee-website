@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 5.2.1 -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/menu.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+      <div class="container-fluid">
+        <div class="logo">
+          <a href="#"><img src="img/logo-light.png" alt="logo"></a>
+        </div>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse side-bar" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">log in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+        <h4>Choose What you want</h4>
+        <div class="menu">
+            <div class=" navbar navbar-expand">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Hot Drinks</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Ice Drinks</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sweets</a>
+                      </li>
+                      
+                        
+                    </ul>
+                    
+                  </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row container m-auto" id="demo">
+        </div>
+        
+        <div class="modal fade" id="recipeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="recipeModalLabel">Recipe Details</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="recipeData" class="modal-body">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+    </header>
+    
+    
+    <footer>
+      <div class="stores">
+        <div class="container stores-content">
+          <img class="logo-footer" src="img/logo-footer-sidearea.png" alt=""/>
+          <span>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
+          <span>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</span>
+          <span>nostrud exercitation ullamco laboris.”</span>
+          <h4>STORES</h4>
+          <a href="#">
+            <span>
+              Dunsmuir Ave, Los Angeles, CA 90036, USA
+            </span>
+          </a>
+          <a href="#">
+            <span>Atkins Ave, Brooklyn, NY 11208, USA</span>
+          </a>
+          <span class="email-desc">NEWS AS FRESH AS OUR COFFEE</span>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Your E-mail Adress..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">
+              <i class="fa-regular fa-envelope email-icon"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="part2">
+        <div class="row container m-auto">
+          <div class="col-ms-4 col-md-3 copyright mt-5">
+            <span class="mb-1">© 2018 <a href="">Qode Interactive</a>, All Rights</span>
+            <span>Reserved</span>
+          </div>
+          <div class="offset-0 offset-md-1 col-ms-4 col-md-4 navs">
+            <ul class="navs-list">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="offset-0 offset-md-2 col-ms-4 col-md-2 contacts mb-5">
+            <ul class="contact-list">
+              <li><i class="fa-brands fa-square-instagram"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="fa-brands fa-tumblr"></i></li>
+              <li><i class="fa-brands fa-vimeo-v"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="jquery-3.6.1.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
