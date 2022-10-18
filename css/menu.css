@@ -65,10 +65,11 @@ nav .navbar-nav .nav-item .nav-link:hover::after{
 /* Header */
 header{
     padding-top: 100px;
-    background-color: teal;
+    background-color: rgb(56, 3, 3);
 }
 header h4{
     text-align: center;
+    color: #fff;
 }
 .menu{
     width: 100%;

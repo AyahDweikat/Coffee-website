@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Owl Scroll -->
+    <link rel="stylesheet" href="external/owl.carousel.min.css">
+    <link rel="stylesheet" href="external/owl.theme.default.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -35,8 +38,11 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
+            <li class="nav-item d-none">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">log in</a>
+              <a class="nav-link" href="login.html">log in</a>
             </li>
           </ul>
         </div>
@@ -159,22 +165,22 @@
     <div class="counter">
       <div class="row container m-auto counter-items">
         <div class="col-md-3 counter-item">
-          <h3 class='counter'>250</h3>
+          <h3 class='count'>250</h3>
           <h4>VARIETIES OF COFFEE</h4>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
         </div>
         <div class="col-md-3 counter-item">
-          <h3 class='counter'>123</h3>
+          <h3 class='count'>123</h3>
           <h4>HOURS OF TESTING</h4>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
         </div>
         <div class="col-md-3 counter-item">
-          <h3 class='counter'>321</h3>
+          <h3 class='count'>321</h3>
           <h4>COFFEE MARKETS</h4>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
         </div>
         <div class="col-md-3 counter-item">
-          <h3 class='counter'>220</h3>
+          <h3 class='count'>220</h3>
           <h4>COFFEE BRANDS</h4>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
         </div>
@@ -189,34 +195,127 @@
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
         </div>
+        <div className='col-md-4 port-img mb-5'>
+          <div class="img position-relative">
+              <div class="overlay">
+                  <span><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <img src={img1} class="w-100"alt=""/>
+          </div>
+      </div>
         <div class="row mt-5 sweet-items m-0">
           <div class="col-md-3 p-0 sweet-item px-2">
-            <a href="#"><img class="w-100" src="img/port-1-img-1.jpg" alt="img of coffee"/></a>
+            <div class="img position-relative">
+              <div class="overlay">
+                <p>Perfect Cup</p>
+                <a href="#">Cup of Coffee /</a>
+                <a href="#">Filtered</a>
+              </div>
+              <a href="#"><img class="w-100" src="img/port-1-img-1.jpg" alt="img of coffee"/></a>
+            </div>
           </div>
           <div class="col-md-3 p-0 sweet-item px-2">
-            <a href="#"><img class="w-100" src="img/port-1-img-2.jpg" alt="img of coffee"/></a>
+            <div class="img position-relative">
+              <div class="overlay">
+                <p>Brewed</p>
+                <a href="#">Cup of Coffee /</a>
+                <a href="#">Filtered</a>
+              </div>
+              <a href="#"><img class="w-100" src="img/port-1-img-2.jpg" alt="img of coffee"/></a>
+            </div>
           </div>
           <div class="col-md-3 p-0 sweet-item px-2">
-            <a href="#"><img class="w-100" src="img/port-1-img-3.jpg" alt="img of coffee"/></a>
+            <div class="img position-relative">
+              <div class="overlay">
+                <p>Perfect Drips</p>
+                <a href="#">Cup of Coffee /</a>
+                <a href="#">Filtered</a>
+              </div>
+              <a href="#"><img class="w-100" src="img/port-1-img-3.jpg" alt="img of coffee"/></a>
+            </div>
           </div>
           <div class="col-md-3 p-0 sweet-item px-2">
-            <a href="#"><img class="w-100" src="img/port-1-img-7.jpg" alt="img of coffee"/></a>
+            <div class="img position-relative">
+              <div class="overlay">
+                <p>Baked Beans</p>
+                <a href="#">Cup of Coffee /</a>
+                <a href="#">Filtered</a>
+              </div>
+              <a href="#"><img class="w-100" src="img/port-1-img-7.jpg" alt="img of coffee"/></a>
+            </div>
           </div>
+          <div class="col-md-3 p-0 sweet-item px-2">
+            <div class="img position-relative">
+              <div class="overlay">
+                <p>Best Aromas</p>
+                <a href="#">Cup of Coffee /</a>
+                <a href="#">Filtered</a>
+              </div>
+              <a href="#"><img class="w-100" src="img/port-1-img-5.jpg" alt="img of coffee"/></a>
+            </div>
+          </div>
+          <div class="col-md-3 p-0 sweet-item px-2">
+            <div class="img position-relative">
+              <div class="overlay">
+                <p>Creams</p>
+                <div class="a-tags">
+                  <a href="#">Cup of Coffee /</a>
+                  <a href="#">Filtered</a>
+                </div>
+                
+              </div>
+              <a href="#"><img class="w-100" src="img/port-1-img-6.jpg" alt="img of coffee"/></a>
+            </div>
+          </div>
+          <div class="col-md-3 p-0 sweet-item px-2">
+            <div class="img position-relative">
+              <div class="overlay">
+                <p>Enjoyment</p>
+                <a href="#">Cup of Coffee /</a>
+                <a href="#">Filtered</a>
+              </div>
+              <a href="#"><img class="w-100" src="img/port-1-img-4.jpg" alt="img of coffee"/></a>
+            </div>
+          </div>
+          <div class="col-md-3 p-0 sweet-item px-2">
+            <div class="img position-relative">
+              <div class="overlay">
+                <p>Big Mugs</p>
+                <a href="#">Cup of Coffee /</a>
+                <a href="#">Filtered</a>
+              </div>
+              <a href="#"><img class="w-100" src="img/port-1-img-8.jpg" alt="img of coffee"/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="logos">
+      <div class="container-fluid row owl-carousel m-0 p-0">
+        <!-- <img class="col-md-2" src="img/logos/coffee-logo-1.png" alt="">
+        <img class="col-md-2" src="img/logos/coffee-logo-2.png" alt="">
+        <img class="col-md-2" src="img/logos/coffee-logo-3.png" alt="">
+        <img class="col-md-2" src="img/logos/coffee-logo-4.png" alt="">
+        <img class="col-md-2" src="img/logos/coffee-logo-5.png" alt="">
+        <img class="col-md-2" src="img/logos/coffee-logo-6.png" alt=""> -->
 
-
-          <div class="col-md-3 p-0 sweet-item px-2">
-            <a href="#"><img class="w-100" src="img/port-1-img-5.jpg" alt="img of coffee"/></a>
-          </div>
-          <div class="col-md-3 p-0 sweet-item px-2">
-            <a href="#"><img class="w-100" src="img/port-1-img-6.jpg" alt="img of coffee"/></a>
-          </div>
-          <div class="col-md-3 p-0 sweet-item px-2">
-            <a href="#"><img class="w-100" src="img/port-1-img-4.jpg" alt="img of coffee"/></a>
-          </div>
-          <div class="col-md-3 p-0 sweet-item px-2">
-            <a href="#"><img class="w-100" src="img/port-1-img-8.jpg" alt="img of coffee"/></a>
-          </div>
-
+        <div class="col-md-2 m-0 p-0">
+          <img src="img/logos/coffee-logo-1.png" alt="">
+        </div>
+        <div class="col-md-2 m-0 p-0">
+          <img src="img/logos/coffee-logo-2.png" alt="">
+        </div>
+        <div class="col-md-2">
+          <img src="img/logos/coffee-logo-3.png" alt="">
+        </div>
+        <div class="col-md-2">
+          <img src="img/logos/coffee-logo-4.png" alt="">
+        </div>
+        <div class="col-md-2">
+          <img src="img/logos/coffee-logo-5.png" alt="">
+        </div>
+        <div class="col-md-2">
+          <img src="img/logos/coffee-logo-6.png" alt="">
         </div>
       </div>
     </div>
@@ -283,6 +382,10 @@
     </footer>
     
     <script src="jquery-3.6.1.js"></script>
+    <script src="external/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel();
+    </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
   </body>
