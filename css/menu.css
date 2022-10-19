@@ -65,7 +65,6 @@ nav .navbar-nav .nav-item .nav-link:hover::after{
 /* Header */
 header{
     padding-top: 100px;
-    height: 100vh;
     background-image: url(../img/menu.jpg);
 }
 header h4{
@@ -90,10 +89,7 @@ header h4{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.men{
-    font-weight: 400;
-    font-family:'Open Sans', sans-serif ;
-}
+
 
 
 
