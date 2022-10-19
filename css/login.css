@@ -69,36 +69,42 @@ a{
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
+    background-position: center -250px;
 }
 .login{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 200px;
 }
 .input-group{
-   width: 250px;
-    margin-top: 250px;
+   width: 300px;
+   margin-top: 30px;
 }
 .input-group .input-group-text{
     border: 1px solid #000;
     padding: 19px 23px;
-    font-size: 14px;
+    font-size: 20px;
 }
 .form-control{
     border: 1px solid #000;
     padding: 19px 23px;
-    font-size: 14px;
+    font-size: 20px;
+}
+.input-group span{
+    font-size: 20px;
+}
+.btn{
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #633c15 !important;
+    color: #fff !important;
+    cursor: pointer;
 }
 /* end login */
-
-
-  
- 
-
- 
-
-
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media screen and (max-width:576px) {
