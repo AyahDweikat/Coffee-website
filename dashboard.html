@@ -55,17 +55,18 @@
         <!-- <div class="alert alert-danger" id="nameAlert">Please Start Name with Capital, min character 3 characters and maximum is 8 characters</div> -->
       </div>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Sweet Name<span class="text-danger">*</span></label>
-        <input id="courseName" type="image" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        
+        <label for="img" class="form-label">Select image:<span class="text-danger">*</span></label>
+        <!-- <label for="exampleInputEmail1" class="form-label">Sweet Name<span class="text-danger">*</span></label> -->
+        <input id="courseName" type="file" name="img" accept="image/* class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
-      
+      <!-- <input type="file" id="img" name="img" accept="image/*"> -->
+      <!-- <input type="submit"> -->
   
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Description</label>
         <textarea id="courseDesc" class="form-control" id="exampleInputPassword1"></textarea>
       </div>
-      <button disabled type="button" id="click" class="btn btn-outline-secondary">Add Course</button>
+      <button type="button" id="click" class="btn btn-outline-secondary">Add Course</button>
       <button type="clear" class="btn btn-outline-secondary">Clear</button>
       <div class="d-block mt-3 mb-3">
         <button type="button" id="deleteBtn" class="btn btn-outline-danger">Delete All</button>
@@ -79,8 +80,7 @@
           <tr>
             <th scope="col">#</th>
             <th scope="col">Name</th>
-            <th scope="col">Category</th>
-            <th scope="col">Price</th>
+            <th scope="col">Image</th>
             <th scope="col">Description</th>
             <th scope="col">action</th>
   
