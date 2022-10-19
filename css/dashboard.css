@@ -4,6 +4,9 @@
 a{
     text-decoration: none;
 }
+#nameAlert{
+    display: none;
+}
 /* start navbar*/
 .logo a img{
     width: 100%;
