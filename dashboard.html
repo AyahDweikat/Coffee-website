@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap 5.2.1 -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-black">
@@ -24,13 +30,13 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                  <a class="nav-link" href="menu.html">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
-              <li class="nav-item d-none">
-                <a class="nav-link" href="dashboard.html">Dashboard</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="login.html">log in</a>
@@ -38,6 +44,55 @@
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
+
+
+    <div class="container w-50 m-auto my-5 sweet-list">
+      <h2 class="mb-3" >Sweet List</h2>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Sweet Name<span class="text-danger">*</span></label>
+        <input id="courseName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <!-- <div class="alert alert-danger" id="nameAlert">Please Start Name with Capital, min character 3 characters and maximum is 8 characters</div> -->
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Sweet Name<span class="text-danger">*</span></label>
+        <input id="courseName" type="image" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        
+      </div>
+      
+  
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Description</label>
+        <textarea id="courseDesc" class="form-control" id="exampleInputPassword1"></textarea>
+      </div>
+      <button disabled type="button" id="click" class="btn btn-outline-secondary">Add Course</button>
+      <button type="clear" class="btn btn-outline-secondary">Clear</button>
+      <div class="d-block mt-3 mb-3">
+        <button type="button" id="deleteBtn" class="btn btn-outline-danger">Delete All</button>
+      </div>
+      <input type="search" placeholder="search" class="form-control" onkeyup="search(this.value)" />
+  
+  
+  
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Description</th>
+            <th scope="col">action</th>
+  
+          </tr>
+        </thead>
+        <tbody id="data">
+          
+        </tbody>
+      </table>
+    </div>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>
