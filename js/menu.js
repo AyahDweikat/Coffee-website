@@ -1,3 +1,8 @@
+var sweetlist = JSON.parse(localStorage.getItem("sweetList"));
+// console.log(sweetlist);
+
+
+
 var myDrinks=[];
 var links = document.querySelectorAll('.nav-link');
 for(let i=0; i<links.length; i++){
@@ -10,10 +15,43 @@ for(let i=0; i<links.length; i++){
 
     }
     else if(e.target.innerHTML.toLowerCase() =='sweets'){
-      console.log(e.target.innerHTML.toLowerCase());
+      getSweets();
     }
   })
 }
+function getSweets(){
+  myDrinks = sweetlist;
+  var results = ``;
+    for(let i=0; i<myDrinks.length; i++){
+        results+= `
+        <div class="col-md-3 menu-list">
+          <div class="data menu-item">
+            <h4>${myDrinks[i].name} </h4>
+            <div class="drinks">
+              <img class="w-100" src="${myDrinks[i].img}" alt=""/>
+            </div>
+            <a data-bs-toggle="modal" data-bs-target="#recipeModal"
+            class="btn btn-dark more" onClick="openDetailsweet(${myDrinks[i]})">See more</a>
+          </div>
+        </div>
+        `;
+    }
+    document.getElementById('demo').innerHTML= results;
+}
+
+function openDetailsweet(needed){
+  // var needed = myDrinks.find((item)=>{
+  //   return item==iii;
+  // })
+  var data = `
+  <h2>${needed.name} </h2>
+  <img src="${needed.img}" class="" />
+  <p class="desc">Description:  ${needed.desc} </p>
+  
+  `
+  document.getElementById('recipeData').innerHTML = data;
+}
+
 
 async function getDrinks(coffee){
   var response = await fetch(`https://api.sampleapis.com/coffee/${coffee}`);

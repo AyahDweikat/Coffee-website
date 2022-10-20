@@ -46,70 +46,25 @@
           </div>
         </div>
     </nav>
-
-
-    <!-- <div class="container w-50 m-auto my-5 sweet-list">
-      <h2 class="mb-3" >Sweet List</h2>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Sweet Name<span class="text-danger">*</span></label>
-        <input id="courseName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div class="alert alert-danger" id="nameAlert">Please Start Name with Capital, min character 3 characters and maximum is 8 characters</div>
-      </div>
-      <div class="mb-3">
-        <label for="img" class="form-label">Select image:<span class="text-danger">*</span></label>
-        <label for="exampleInputEmail1" class="form-label">Sweet Name<span class="text-danger">*</span></label>
-        <input id="courseName" type="file" name="img" accept="image/* class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Description</label>
-        <textarea id="courseDesc" class="form-control" id="exampleInputPassword1"></textarea>
-      </div>
-      <button type="button" id="click" class="btn btn-outline-secondary">Add Course</button>
-      <button type="clear" class="btn btn-outline-secondary">Clear</button>
-      <div class="d-block mt-3 mb-3">
-        <button type="button" id="deleteBtn" class="btn btn-outline-danger">Delete All</button>
-      </div>
-      <input type="search" placeholder="search" class="form-control" onkeyup="search(this.value)" />
-  
-  
-  
-      <table class="table table-striped mt-5">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Image</th>
-            <th scope="col">Description</th>
-            <th scope="col">action</th>
-  
-          </tr>
-        </thead>
-        <tbody id="data">
-          
-        </tbody>
-      </table>
-    </div> -->
     
-    <div class="container w-50 m-auto my-5 sweet-list">
-      <h2 class="mb-3" >Sweet List</h2>
+    <div class="container w-50 m-auto my-5">
+      <h2 class="sweet-list">Sweet List</h2>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Coures Name<span class="text-danger">*</span></label>
-        <input id="courseName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <label for="exampleInputEmail1" class="form-label">Sweet Name<span class="text-danger">*</span></label>
+        <input id="sweetName" type="text" class="form-control" aria-describedby="emailHelp">
         <div id="nameAlert" class="alert alert-danger">please start name with capital latter ,max is 8</div>
       </div>
-      <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Course Category</label>
-          <input id="courseCat" type="text" class="form-control" id="exampleInputPassword1">
+
+      <div class="mb-3" id="selectedBanner"></div>
+      <div class="">
+        <label for="image">Image</label>
+        <input type="file" class="form-control sweetImgC" id="sweetImgId" placeholder="Enter Image" name="image" />
       </div>
       <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Course Price</label>
-          <input id="coursePrice" type="number" class="form-control" id="exampleInputPassword1">
+          <label for="exampleInputPassword1" class="form-label">Sweet Description</label>
+          <textarea id="sweetDesc" class="form-control" id="exampleInputPassword1"></textarea>
       </div>
-      <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Course Description</label>
-          <textarea id="courseDesc" class="form-control" id="exampleInputPassword1"></textarea>
-      </div>
-      <button disabled type="button" id="click" class="btn btn-outline-secandary">Add Course</button>
+      <button type="button" id="click" class="btn btn-outline-secandary">Add Sweet</button>
       <button type="clear" class="btn btn-outline-secandary">Clear</button>
 
       <div class="d-block mt-5 mb-3">
@@ -123,13 +78,12 @@
             <tr>
               <th scope="col">#</th>
               <th scope="col">Name</th>
-              <th scope="col">Category</th>
-              <th scope="col">Price</th>
+              <th scope="col">Image</th>
               <th scope="col">Description</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
-          <tbody id="data">
+          <tbody class="list-table" id="data">
 
           </tbody>
       </table>
@@ -139,6 +93,6 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.32/sweetalert2.all.min.js" integrity="sha512-Urg8l2V5SUjMkg0IhnAJw1G0viVOVqOxsoa8jkkq5n7JA55bGWAYJME3Lap1q0SEWvtot2pOgoprTOib4jtpuw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.32/sweetalert2.min.js" integrity="sha512-yc+tEbvC4kiy3J6e0aZogFVr8AZhMtJTof2z+fGPaJgjehpIPzguZxfRRTiQcXlSHbJsB3Bborvv++81TMLZ2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="dashboard.js"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 </html>

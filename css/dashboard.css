@@ -69,12 +69,10 @@ a{
 .sweet-list{
     padding-top: 70px;
 }
-
-
-
-
-
-
+.list-table img{
+    width:100px;
+    height: 100px;
+}
 /* Footer PART-1 */
 .stores{
     background-image: url('../img/footer-top-img-1.jpg');

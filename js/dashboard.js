@@ -1,72 +1,106 @@
-var courseName=document.getElementById("courseName");
-var courseCat=document.getElementById("courseCat");
-var coursePrice=document.getElementById("coursePrice");
-var courseDesc=document.getElementById("courseDesc");
+var sweetName=document.getElementById("sweetName");
+var sweetImgId = document.getElementById("sweetImgId")
+var sweetImgC=document.getElementsByClassName("sweetImgC");//
+var sweetDesc=document.getElementById("sweetDesc");
 var addBtn = document.getElementById("click");
+var deleteBtn = document.getElementById("deleteBtn");
 var data = document.getElementById("data");
-var courses ;
+var sweets;
 var nameAlert = document.getElementById("nameAlert");
+
 var currentIndex;
-if(localStorage.getItem("coursesList") == null){
-     courses = [] ;
+if(localStorage.getItem("sweetList") == null){
+    sweets = [];
 }else{
-    courses = JSON.parse(localStorage.getItem("coursesList"));
+    sweets = JSON.parse(localStorage.getItem("sweetList"));
     displayData();
 }
+
+
 addBtn.onclick = function(){
-    if(addBtn.innerHTML=='Add Course'){
-        addCourse();
+    if(addBtn.innerHTML=='Add Sweet'){
+        addImage(function(base64) {
+            addSweet(base64);
+            displayData();
+            clear();
+        });
     }else{
-      updateCourse();
-      addBtn.innerHTML ="Add Course";
+        updateSweet();
+        addImage(function(base64) {
+            updateSweet(base64);
+            displayData();
+            clear();
+        });
+        addBtn.innerHTML ="Add Sweet";
     }
-    
-   //read
-   displayData();
-   //clear
-   clear();
-} 
-function addCourse(){
-    var course = {
-        name:courseName.value,
-        cat:courseCat.value,
-        price:coursePrice.value,
-        desc:courseDesc.value
-     };
-     courses.push(course);
-     localStorage.setItem("coursesList",JSON.stringify(courses));
-     Swal.fire({
-      position: 'top-end',
-      icon: 'success',
-     title: 'course added successfully',
-     showConfirmButton: false,
-     timer: 2500
-})
+}
+function addSweet(imgSweet,){
+    var sweet = {
+        name:sweetName.value,
+        img:imgSweet,
+        desc:sweetDesc.value
+    };
+    sweets.push(sweet);
+    localStorage.setItem("sweetList",JSON.stringify(sweets));
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'sweets added successfully',
+        showConfirmButton: false,
+        timer: 2500
+    })
+}
+
+
+function addImage(onLoadSuccess) {
+    const file = document.querySelector("input[type=file]").files[0];
+    const reader = new FileReader();
+
+    reader.addEventListener(
+        "load",
+        function() {
+            // convert image file to base64 string
+            onLoadSuccess(reader.result);
+        },
+        false
+    );
+    if (file) {
+        reader.readAsDataURL(file);
+    } else {
+        onLoadSuccess();
+    }
 }
 function displayData(){
     var result = "";
-    for(var i=0;i<courses.length;i++){
+    for(var i=0;i<sweets.length;i++){
         result += `<tr>
           <td>${i}</td>
-          <td>${courses[i].name}</td>
-          <td>${courses[i].cat}</td>
-          <td>${courses[i].price}</td>
-          <td>${courses[i].desc}</td>
-          <td> <button onclick="getCourseData(${i})" class="btn btn-outline-info">update</button>
-            <button onclick="deleteCourse(${i})" class="btn btn-outline-danger">delete</button>
+          <td>${sweets[i].name}</td>
+          
+          <td><img src="${sweets[i].img}" class="" alt=""></td>
+          
+          
+          <td>${sweets[i].desc}</td>
+          <td> 
+          <button onclick="getSweetData(${i})" class="btn btn-outline-info">update</button>
+          <button onclick="deleteSweet(${i})" class="btn btn-outline-danger">delete</button>
           </td>
         </tr>`; 
     }
     data.innerHTML=result;
 }
 function clear(){
-    courseName.value = "";
-   courseCat.value = "";
-   coursePrice.value = "";
-   courseDesc.value = "";
+    if(addBtn.innerHTML !='Add Sweet'){
+        addBtn.innerHTML ="Add Sweet";
+    }
+    sweetName.value = "";
+    sweetDesc.value = "";
+    for (let i = 0; i < sweetImgC.length; i++) {
+        sweetImgC[i].value = "";
+    } 
 }
-//deleteCourse
-function deleteCourse(index){
+//deleteSweet
+function deleteSweet(index){
     Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -76,11 +110,9 @@ function deleteCourse(index){
         cancelButtonColor: '#d33',
         confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
-
-        
         if (result.isConfirmed) {
-            courses.splice(index,1);
-          localStorage.setItem("coursesList",JSON.stringify(courses));
+            sweets.splice(index,1);
+          localStorage.setItem("sweetList",JSON.stringify(sweets));
           displayData();
           Swal.fire(
             'Deleted!',
@@ -92,24 +124,23 @@ function deleteCourse(index){
 }
  // delete all
 deleteBtn.onclick=function(){
-    localStorage.removeItem('coursesList');
-    courses=[];
+    localStorage.removeItem('sweetList');
+    sweets=[];
     data.innerHTML="";
 }
 //search
 function search(e){
     var result = "";
-    for(var i=0;i<courses.length;i++){
-        if(courses[i].name.toLowerCase().includes(e.toLowerCase())){
-
+    for(var i=0;i<sweets.length;i++){
+        if(sweets[i].name.toLowerCase().includes(e.toLowerCase())){
             result += `<tr>
                 <td>${i}</td>
-                <td>${courses[i].name}</td>
-                <td>${courses[i].cat}</td>
-                <td>${courses[i].price}</td>
-                <td>${courses[i].desc}</td>
-                <td> <button class="btn btn-outline-info">update</button>
-                   <button onclick="deleteCourse(${i})" class="btn btn-outline-danger">delete</button>
+                <td>${sweets[i].name}</td>
+                <td><img src="${sweets[i].img}" class="" alt=""></td>
+                <td>${sweets[i].desc}</td>
+                <td> 
+                <button onclick="getSweetData(${i})" class="btn btn-outline-info">update</button>
+                <button onclick="deleteSweet(${i})" class="btn btn-outline-danger">delete</button>
                 </td>
             </tr>`; 
         }
@@ -117,41 +148,39 @@ function search(e){
     data.innerHTML=result; 
 }
  //give the data
-function getCourseData(index){
-    var course = courses[index];
-    courseName.value=course.name
-    courseCat.value=course.cat
-    coursePrice.value=course.price
-    courseDesc.value=course.desc
-    addBtn.innerHTML='update course';
+function getSweetData(index,imgSweet){
+    var sweet = sweets[index];
+    sweetName.value=sweet.name;
+    sweetDesc.value=sweet.desc;
+    addBtn.innerHTML='update sweet';
     currentIndex=index;
+    sweetImgId.value=imgSweet;
 }
 //update the data
-function updateCourse(index){
-    
-    var course = {
-        name:courseName.value,
-        cat:courseCat.value,
-        price:coursePrice.value,
-        desc:courseDesc.value
+function updateSweet(imgSweet){
+    var sweet = {
+        name:sweetName.value,
+        desc:sweetDesc.value,
+        img:imgSweet,
      };
-     courses[currentIndex].name = course.name;
-     courses[currentIndex].cat = course.cat;
-     courses[currentIndex].price = course.price;
-     courses[currentIndex].desc = course.desc;
-     localStorage.setItem("coursesList",JSON.stringify(courses));
+     sweets[currentIndex].name = sweet.name;
+     sweets[currentIndex].img = sweet.img;
+     sweets[currentIndex].desc = sweet.desc;
+     localStorage.setItem("sweetList",JSON.stringify(sweets));
+     displayData(sweet.img);
 }
-
-courseName.onkeyup = function(){
+sweetName.onkeyup = function(){
     var namePattern = /^[A-Z][a-z]{2,8}$/;
-    if(namePattern.test(courseName.value)){
+    if(namePattern.test(sweetName.value)){
         addBtn.removeAttribute("disabled");
-        courseName.classList.add('is-valid');
-        courseName.classList.remove('is-invalid');
+        sweetName.classList.add('is-valid');
+        sweetName.classList.remove('is-invalid');
         nameAlert.classList.add('d-none');
     }else{
         addBtn.setAttribute("disabled","disabled");
-        courseName.classList.replace('is-valid','is-invalid');
+        sweetName.classList.add('is-invalid');
+        sweetName.classList.remove('is-valid');
+        sweetName.classList.replace('is-valid','is-invalid');
         nameAlert.classList.add('d-block');
         nameAlert.classList.remove('d-none');
     }
