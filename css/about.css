@@ -260,7 +260,7 @@ a{
     font-size: 1.25rem;
     font-weight: 400;
 }
-/* Footer PART-1 */
+/* FOOTER PART-1 */
 .stores{
     background-image: url('../img/footer-top-img-1.jpg');
     background-position: center;
@@ -559,7 +559,7 @@ a{
     .stores .form-control{
         padding: 1.1875rem 1.4375rem;
     }
-    /* FOTER PART-2 */
+    /* FOOTER PART-2 */
     .part2 ul{
         padding-top: 2rem;
     }
@@ -693,7 +693,7 @@ a{
     .contact-us span{
         font-size: 1rem;
     }
-    /* FOTER PART-1 */
+    /* FOOTER PART-1 */
     .logo-footer{
         max-width: 10rem;
         height: auto;
@@ -725,7 +725,7 @@ a{
     .stores .form-control{
         padding: 1.1875rem 1.4375rem;
     }
-    /* FOTER PART-2 */
+    /* FOOTER PART-2 */
     .part2 ul{
         padding-top: 2rem;
     }
@@ -816,13 +816,7 @@ a{
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width:1199px) {
-    /* HEADER */
 
-    
-    /* ABOUT */
-
-
-    /* TESTIMONIAL */
 
 
 }

@@ -303,7 +303,6 @@ img.cover{
     font-size: 20px;
     font-weight: 400;
 }
-/*  */
 .img .overlay{
     position: absolute;
     top: 0;
@@ -326,8 +325,6 @@ img.cover{
 .img:hover .overlay{
     transform: scale(1);
 }
-
-
 /* COUNTER */
 .count {
     display: flex;
@@ -405,7 +402,7 @@ img.cover{
     font-size: 1.25rem;
     font-weight: 400;
 }
-/* Footer PART-1 */
+/* FOOTER PART-1 */
 .stores{
     background-image: url('../img/footer-top-img-1.jpg');
     background-position: center;
@@ -693,7 +690,7 @@ img.cover{
     .contact-us span{
         font-size: 1rem;
     }
-    /* FOTER PART-1 */
+    /* FOOTER PART-1 */
     .logo-footer{
         max-width: 10rem;
         height: auto;
@@ -725,7 +722,7 @@ img.cover{
     .stores .form-control{
         padding: 1.1875rem 1.4375rem;
     }
-    /* FOTER PART-2 */
+    /* FOOTER PART-2 */
     .part2 ul{
         padding-top: 2rem;
     }
@@ -894,7 +891,7 @@ img.cover{
     .contact-us span{
         font-size: 1rem;
     }
-    /* FOTER PART-1 */
+    /* FOOTER PART-1 */
     .logo-footer{
         max-width: 10rem;
         height: auto;
@@ -926,7 +923,7 @@ img.cover{
     .stores .form-control{
         padding: 1.1875rem 1.4375rem;
     }
-    /* FOTER PART-2 */
+    /* FOOTER PART-2 */
     .part2 ul{
         padding-top: 2rem;
     }

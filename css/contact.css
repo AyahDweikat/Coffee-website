@@ -434,7 +434,7 @@ a{
     .stores .form-control{
         padding: 1.1875rem 1.4375rem;
     }
-    /* FOTER PART-2 */
+    /* FOOTER PART-2 */
     .part2 ul{
         padding-top: 2rem;
     }
@@ -610,20 +610,9 @@ a{
     .header-title {
         font-size: 70px;
     }
-    /* TOUCH */
-
-
-    /* MAP */
-    
-
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width:1199px) {
-    /* TOUCH */
-
-
-    /* MAP */
-
 
 }
