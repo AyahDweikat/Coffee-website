@@ -46,48 +46,50 @@
           </div>
         </div>
     </nav>
-    
-    <div class="container w-50 m-auto my-5">
-      <h2 class="sweet-list">Sweet List</h2>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Sweet Name<span class="text-danger">*</span></label>
-        <input id="sweetName" type="text" class="form-control" aria-describedby="emailHelp">
-        <div id="nameAlert" class="alert alert-danger">please start name with capital latter ,max is 8</div>
-      </div>
 
-      <div class="mb-3" id="selectedBanner"></div>
-      <div class="IMG">
-        <label for="image">Image</label>
-        <input type="file" class="form-control sweetImgC" id="sweetImgId" placeholder="Enter Image" name="image" />
+    <div class="header">
+      <div class="container w-50 m-auto my-5">
+        <h2 class="sweet-list">Sweet List</h2>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Sweet Name<span class="text-danger">*</span></label>
+          <input id="sweetName" type="text" class="form-control" aria-describedby="emailHelp">
+          <div id="nameAlert" class="alert alert-danger">please start name with capital latter ,max is 8</div>
+        </div>
+  
+        <div class="mb-3" id="selectedBanner"></div>
+        <div class="IMG  mb-2 pt-1">
+          <label for="image">Image</label>
+          <input type="file" class="form-control sweetImgC" id="sweetImgId" placeholder="Enter Image" name="image" />
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form mb-2 pt-1">Sweet Description</label>
+            <textarea id="sweetDesc" class="form-control" id="exampleInputPassword1"></textarea>
+        </div>
+        <button type="button" id="click" class="btn btn-outline-secandary">Add Sweet</button>
+        <button type="clear" class="btn btn-outline-secandary">Clear</button>
+  
+        <div class=" d-block mt-5 mb-3">
+          <button type="button" id="deleteBtn" class="btn btn-outline-danger">delete all</button>
+        </div>
+       
+        <input type="search" onkeyup="search(this.value)" class="form-control" placeholder="search ..."/>
+        
+        <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Image</th>
+                <th scope="col">Description</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody class="list-table" id="data">
+  
+            </tbody>
+        </table>
       </div>
-      <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Sweet Description</label>
-          <textarea id="sweetDesc" class="form-control" id="exampleInputPassword1"></textarea>
-      </div>
-      <button type="button" id="click" class="btn btn-outline-secandary">Add Sweet</button>
-      <button type="clear" class="btn btn-outline-secandary">Clear</button>
-
-      <div class="d-block mt-5 mb-3">
-        <button type="button" id="deleteBtn" class="btn btn-outline-danger">delete all</button>
-      </div>
-     
-      <input type="search" onkeyup="search(this.value)" class="form-control" placeholder="search ..."/>
-      
-      <table class="table table-striped mt-5">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Name</th>
-              <th scope="col">Image</th>
-              <th scope="col">Description</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody class="list-table" id="data">
-
-          </tbody>
-      </table>
-  </div>
+    </div>
 
     
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -66,8 +66,33 @@ a{
     width: 100%;
 }
 /* HEADER */
+.header{
+    background-image: url(../img/menu.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 .sweet-list{
     padding-top: 70px;
+    font-weight: 600;
+    font-family: 'Marcellus', serif;
+}
+.IMG{
+    font-weight: 600;
+}
+.form-label{
+    font-weight: 600;
+}
+.form{
+    font-weight: 600;
+}
+.btn{
+    font-weight: 600;
+    border: 1px solid #000;
+}
+.btn:first-child:hover, :not(.btn-check)+.btn:hover:hover{
+    border: 1px solid #be9c79;
+    background-color: #be9c79;
+    color: #000;
 }
 .list-table img{
     width:100px;
