@@ -12,7 +12,6 @@ submit.onclick = function(){
         password.classList.add('is-valid');
         userName.value ="";
         password.value ="";
-
     }
     else {
         userName.classList.add('is-invalid');

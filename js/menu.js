@@ -1,5 +1,5 @@
 var sweetlist = JSON.parse(localStorage.getItem("sweetList"));
-// console.log(sweetlist);
+console.log(sweetlist);
 
 
 
@@ -31,7 +31,7 @@ function getSweets(){
               <img class="w-100" src="${myDrinks[i].img}" alt=""/>
             </div>
             <a data-bs-toggle="modal" data-bs-target="#recipeModal"
-            class="btn btn-dark more" onClick="openDetailsweet(${myDrinks[i]})">See more</a>
+            class="btn btn-dark more" onClick="openDetailsweet(${i})">See more</a>
           </div>
         </div>
         `;
@@ -39,10 +39,12 @@ function getSweets(){
     document.getElementById('demo').innerHTML= results;
 }
 
-function openDetailsweet(needed){
-  // var needed = myDrinks.find((item)=>{
-  //   return item==iii;
-  // })
+function openDetailsweet(id){
+  
+  var needed = myDrinks.find((item, idx)=>{
+    return idx==id;
+  })
+  console.log(needed);
   var data = `
   <h2>${needed.name} </h2>
   <img src="${needed.img}" class="" />

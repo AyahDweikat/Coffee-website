@@ -120,6 +120,20 @@ a.more:hover{
     border: #be9c79;
     color: #fff;
 }
+.btn-menu{
+    border:1px solid #000;
+    border-radius: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.btn-menu:hover{
+    background-color:#be9c79;
+}
 /* Modal */
 
 .modal-body h2{
@@ -281,9 +295,13 @@ p.desc{
     color: #be9c79;
     cursor: pointer;
 }
-
+@media screen and (max-width:313px) {
+    .menu .navbar-nav .nav-item .nav-link{
+        font-size: 12px;
+    }
+}
 /* Extra small devices (portrait phones, less than 576px) */
-@media screen and (max-width:576px) {
+@media screen and (min-width:313px) and (max-width:576px) {
     /* Navbar */
     .logo{
         margin: auto;
@@ -295,7 +313,7 @@ p.desc{
         font-size: 15px;
     }
     .navbar-nav .nav-item{
-        margin-left:40px;
+        margin-left:0px;
     }
     .navbar-nav .nav-item .nav-link.active::after{
         width: 17%;
@@ -322,12 +340,83 @@ p.desc{
         text-align: right;
         width: 17%;
         width: 60px;
-
     }
     .navbar-nav .nav-item .nav-link:hover::after{
         width: 100%;
         width: 17%;
         width: 60px;
+    }
+
+    header{
+        padding-top: 100px;
+        background-image: url(../img/menu.jpg);
+    }
+    header h4{
+        text-align: center;
+        color: #000;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .menu-list{
+        margin-bottom: 100px;
+    }
+    .drinks img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    .menu-item h4{
+        font-size: 25px;
+        font-weight: 400;
+        font-family: 'Marcellus', serif;
+    }
+    .menu-item{
+        position: relative;
+    }
+    a.more{
+        position: absolute;
+        padding:10px;
+        border-radius: 50%;
+        bottom: 0;
+        background-color: #121212;
+        border: #121212;
+        color: #fff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+    a.more:hover{
+        position: absolute;
+        bottom: 0;
+        background-color: #be9c79 !important;
+        border: #be9c79;
+        color: #fff;
+    }
+    .btn-menu{
+        border:1px solid #000;
+        border-radius: 10px;
+        margin-left: 3px;
+        margin-right: 3px;
+    
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .btn-menu:hover{
+        background-color:#be9c79;
     }
     /* FOOTER PART-1 */
     .logo-footer{

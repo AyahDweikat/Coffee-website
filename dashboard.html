@@ -48,7 +48,7 @@
     </nav>
 
     <div class="header">
-      <div class="container w-50 m-auto my-5">
+      <div class="container w-75 w-md-50 m-auto my-5">
         <h2 class="sweet-list">Sweet List</h2>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Sweet Name<span class="text-danger">*</span></label>
@@ -66,7 +66,7 @@
             <textarea id="sweetDesc" class="form-control" id="exampleInputPassword1"></textarea>
         </div>
         <button type="button" id="click" class="btn btn-outline-secandary">Add Sweet</button>
-        <button type="clear" class="btn btn-outline-secandary">Clear</button>
+        <button type="reset" value="reset" class="btn btn-outline-secandary">Clear</button>
   
         <div class=" d-block mt-5 mb-3">
           <button type="button" id="deleteBtn" class="btn btn-outline-danger">delete all</button>
@@ -74,21 +74,22 @@
        
         <input type="search" onkeyup="search(this.value)" class="form-control" placeholder="search ..."/>
         
-        <table class="table table-striped mt-5">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Image</th>
-                <th scope="col">Description</th>
-                <th scope="col">Action</th>
-              </tr>
-            </thead>
-            <tbody class="list-table" id="data">
-  
-            </tbody>
-        </table>
+        
       </div>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Image</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody class="list-table" id="data">
+
+        </tbody>
+    </table>
     </div>
 
     

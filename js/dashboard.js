@@ -74,7 +74,7 @@ function displayData(){
     var result = "";
     for(var i=0;i<sweets.length;i++){
         result += `<tr>
-          <td>${i}</td>
+          <td>${i+1}</td>
           <td>${sweets[i].name}</td>
           
           <td><img src="${sweets[i].img}" class="" alt=""></td>
@@ -95,9 +95,6 @@ function clear(){
     }
     sweetName.value = "";
     sweetDesc.value = "";
-    for (let i = 0; i < sweetImgC.length; i++) {
-        sweetImgC[i].value = "";
-    } 
 }
 //deleteSweet
 function deleteSweet(index){
@@ -124,9 +121,30 @@ function deleteSweet(index){
 }
  // delete all
 deleteBtn.onclick=function(){
-    localStorage.removeItem('sweetList');
-    sweets=[];
-    data.innerHTML="";
+
+    Swal.fire({
+        title: 'Are you sure to delete all list?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            localStorage.removeItem('sweetList');
+            sweets=[];
+            data.innerHTML="";
+          Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
+        }
+      })
+
+
+    
 }
 //search
 function search(e){
@@ -134,7 +152,7 @@ function search(e){
     for(var i=0;i<sweets.length;i++){
         if(sweets[i].name.toLowerCase().includes(e.toLowerCase())){
             result += `<tr>
-                <td>${i}</td>
+                <td>${i+1}</td>
                 <td>${sweets[i].name}</td>
                 <td><img src="${sweets[i].img}" class="" alt=""></td>
                 <td>${sweets[i].desc}</td>
