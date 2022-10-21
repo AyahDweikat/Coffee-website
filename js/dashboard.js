@@ -95,6 +95,7 @@ function clear(){
     }
     sweetName.value = "";
     sweetDesc.value = "";
+    sweetImgId.value="";
 }
 //deleteSweet
 function deleteSweet(index){
@@ -113,7 +114,7 @@ function deleteSweet(index){
           displayData();
           Swal.fire(
             'Deleted!',
-            'Your file has been deleted.',
+            'Your item has been deleted.',
             'success'
           )
         }
@@ -137,7 +138,7 @@ deleteBtn.onclick=function(){
             data.innerHTML="";
           Swal.fire(
             'Deleted!',
-            'Your file has been deleted.',
+            'Your list has been deleted.',
             'success'
           )
         }
@@ -188,7 +189,7 @@ function updateSweet(imgSweet){
      displayData(sweet.img);
 }
 sweetName.onkeyup = function(){
-    var namePattern = /^[A-Z][a-z]{2,8}$/;
+    var namePattern = /^[A-Z][a-z]{2,25}$/;
     if(namePattern.test(sweetName.value)){
         addBtn.removeAttribute("disabled");
         sweetName.classList.add('is-valid');
